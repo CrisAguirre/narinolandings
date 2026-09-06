@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState, useCallback } from "react";
 
-export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, onRegionLeave, groupByColor = false }) {
+export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, onRegionLeave, onColombiaHover, onColombiaLeave, groupByColor = false }) {
   const containerRef = useRef(null);
   const [svgMarkup, setSvgMarkup] = useState("");
   const [loaded, setLoaded] = useState(false);
@@ -33,7 +33,27 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
         paths.forEach((path, index) => {
           const id = path.getAttribute("id") || ("path-" + index);
           path.setAttribute("data-region-id", id);
-          path.classList.add("map-path");
+          
+          // Safely check if path is in the Localizador (Colombia map) group
+          let isColombia = false;
+          try {
+            let current = path.parentElement;
+            while(current && current.tagName === 'g' || current.tagName === 'G') {
+              if (current.getAttribute('inkscape:label') === 'Localizador') {
+                isColombia = true;
+                break;
+              }
+              current = current.parentElement;
+            }
+          } catch(e) {}
+          
+          if (isColombia) {
+            path.classList.add("map-path", "colombia-path");
+            path.setAttribute("data-map-type", "colombia");
+          } else {
+            path.classList.add("map-path", "narino-path");
+            path.setAttribute("data-map-type", "narino");
+          }
 
           // Extract fill color for grouping
           const styleAttr = path.getAttribute("style") || "";
@@ -60,6 +80,12 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
 
   const getPathsToHighlight = (path) => {
     if (!path) return [];
+    
+    // For Colombia minimap, don't group by color
+    if (path.getAttribute("data-map-type") === "colombia") {
+      return [path];
+    }
+
     if (!groupByColor) return [path];
     
     const color = path.getAttribute("data-fill-color");
@@ -68,12 +94,14 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
       return [path];
     }
     
-    return Array.from(containerRef.current.querySelectorAll(`.map-path[data-fill-color="${color}"]`));
+    return Array.from(containerRef.current.querySelectorAll(`.map-path[data-map-type="narino"][data-fill-color="${color}"]`));
   };
 
   const handleClick = useCallback((e) => {
     const path = e.target.closest(".map-path");
     if (path) {
+      if (path.getAttribute("data-map-type") === "colombia") return; // Ignore clicks on Colombia map for now
+
       if (groupByColor) {
         const color = path.getAttribute("data-fill-color");
         if (onRegionClick) onRegionClick(color);
@@ -93,15 +121,19 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
         p.style.opacity = "0.85";
       });
 
-      if (groupByColor) {
-        const color = path.getAttribute("data-fill-color");
-        if (onRegionHover) onRegionHover(color);
+      if (path.getAttribute("data-map-type") === "colombia") {
+        if (onColombiaHover) onColombiaHover(path.getAttribute("data-fill-color"));
       } else {
-        const id = path.getAttribute("data-region-id");
-        if (onRegionHover) onRegionHover(id);
+        if (groupByColor) {
+          const color = path.getAttribute("data-fill-color");
+          if (onRegionHover) onRegionHover(color);
+        } else {
+          const id = path.getAttribute("data-region-id");
+          if (onRegionHover) onRegionHover(id);
+        }
       }
     }
-  }, [onRegionHover, groupByColor]);
+  }, [onRegionHover, onColombiaHover, groupByColor]);
 
   const handleMouseOut = useCallback((e) => {
     const path = e.target.closest(".map-path");
@@ -111,9 +143,14 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
         p.style.filter = "";
         p.style.opacity = "";
       });
-      if (onRegionLeave) onRegionLeave();
+      
+      if (path.getAttribute("data-map-type") === "colombia") {
+        if (onColombiaLeave) onColombiaLeave();
+      } else {
+        if (onRegionLeave) onRegionLeave();
+      }
     }
-  }, [onRegionLeave, groupByColor]);
+  }, [onRegionLeave, onColombiaLeave, groupByColor]);
 
   if (!loaded) {
     return (

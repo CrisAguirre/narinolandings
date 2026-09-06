@@ -1,144 +1,172 @@
 export const regionsData = {
-  // === SUBREGIONES (1.svg) ===
-  // Nota: Los IDs aquí son los colores hexadecimales que agrupan a los municipios en el mapa original.
-  // Si notas que el nombre no corresponde a la región iluminada, simplemente intercambia el nombre y descripción en este archivo.
-
-  "#ffcccc": {
-    name: "Subregión de Obando (Sur)",
-    description: "Ubicada al sur del departamento, fronteriza con Ecuador. Es una de las regiones más pobladas y de mayor dinamismo comercial por el puente internacional de Rumichaca.",
+  // Sanquianga: El Charco, La Tola, Mosquera, Olaya Herrera, Santa Bárbara
+  "#b8da6b": {
+    name: "Subregión Sanquianga",
+    description: "Ubicada en la llanura pacífica, caracterizada por sus manglares y ecosistemas de costa. Es una región rica en biodiversidad y recursos hídricos.",
     characteristics: [
-      "Clima predominantemente frío y páramo",
-      "Alta producción lechera y de papa",
-      "Epicentro comercial binacional",
-      "Conformada por 13 municipios incluyendo Ipiales y Pupiales"
-    ]
+      "Extensos bosques de manglar y ecosistemas estuarinos.",
+      "Economía basada en la pesca artesanal, recolección de piangua y agricultura de subsistencia.",
+      "Gran riqueza cultural afrodescendiente.",
+      "Municipios: El Charco, La Tola, Mosquera, Olaya Herrera, Santa Bárbara"
+    ],
   },
-  "#ffdea9": {
-    name: "Subregión Centro",
-    description: "Es el corazón político y administrativo del departamento, dominado por el volcán Galeras. Aquí se encuentra la capital, San Juan de Pasto.",
-    characteristics: [
-      "Centro administrativo y gubernamental",
-      "Clima templado a frío (Valle de Atriz)",
-      "Economía basada en servicios, comercio y agricultura",
-      "Sede del Carnaval de Negros y Blancos"
-    ]
-  },
-  "#c6ecff": {
-    name: "Subregión de Juanambú",
-    description: "Ubicada hacia el nororiente del departamento. Es una zona montañosa con gran riqueza hídrica y paisajes andinos impresionantes.",
-    characteristics: [
-      "Producción de excelente café de altura",
-      "Terrenos escarpados y clima templado",
-      "Gran riqueza hídrica y cañones profundos",
-      "Incluye municipios como Buesaco y La Cruz"
-    ]
-  },
+  // Pacífico Sur: Tumaco, Francisco Pizarro
   "#75c5f0": {
     name: "Subregión Pacífico Sur",
-    description: "Zona costera sobre el océano Pacífico, de gran biodiversidad y cultura afrodescendiente. Tumaco es su principal centro urbano.",
+    description: "Zona costera de gran importancia portuaria y turística. Principal centro urbano y económico del pacífico nariñense.",
     characteristics: [
-      "Clima cálido húmedo",
-      "Economía portuaria, pesca y extracción maderera",
-      "Fuerte presencia de cultura afro e indígena Awá",
-      "Manglares y altísima biodiversidad"
-    ]
+      "Alberga el puerto marítimo de Tumaco, vital para el comercio.",
+      "Playas turísticas (El Morro, Bocagrande).",
+      "Alta producción pesquera y forestal.",
+      "Municipios: Tumaco, Francisco Pizarro"
+    ],
   },
-  "#b8da6b": {
-    name: "Subregión de Sanquianga",
-    description: "Zona costera y de esteros en el noroccidente de Nariño, caracterizada por el Parque Nacional Natural Sanquianga.",
-    characteristics: [
-      "Ecosistemas de manglar extensos",
-      "Acceso principalmente fluvial y marítimo",
-      "Economía pesquera artesanal",
-      "Incluye El Charco y Olaya Herrera"
-    ]
-  },
+  // Telembí: Barbacoas, Magüí Payán, Roberto Payán
   "#bebad7": {
-    name: "Subregión del Telembí",
-    description: "Ubicada en la llanura del Pacífico adentro. Es rica en minería y cuenta con vastas selvas húmedas.",
+    name: "Subregión Telembí",
+    description: "Región selvática y lluviosa, cruzada por el río Telembí. Históricamente conocida por su riqueza minera.",
     characteristics: [
-      "Riqueza aurífera tradicional",
-      "Clima cálido y muy húmedo",
-      "Territorio ancestral de comunidades negras e indígenas",
-      "Barbacoas es uno de sus centros principales"
-    ]
+      "Alta pluviosidad y densa selva húmeda tropical.",
+      "Tradición minera aurífera (oro).",
+      "Economía forestal y agrícola tradicional.",
+      "Municipios: Barbacoas, Magüí Payán, Roberto Payán"
+    ],
   },
-  "#ffadad": {
+  // Piedemonte Costero: Mallama, Ricaurte
+  "#fffdc0": {
     name: "Subregión Piedemonte Costero",
-    description: "Es la zona de transición entre los Andes y la llanura del Pacífico. Geografía agreste y lluviosa.",
+    description: "Zona de transición entre los Andes y la llanura pacífica, caracterizada por su escarpada topografía y alta humedad.",
     characteristics: [
-      "Punto de conexión entre Pasto y Tumaco",
-      "Alta pluviosidad todo el año",
-      "Presencia de la Reserva Natural La Planada",
-      "Incluye Ricaurte y Mallama"
-    ]
+      "Topografía agreste con profundos cañones.",
+      "Reserva Natural La Planada y gran diversidad de aves.",
+      "Territorio de las comunidades indígenas Awá.",
+      "Municipios: Mallama, Ricaurte"
+    ],
   },
-  "#fffc9a": {
-    name: "Subregión La Sabana",
-    description: "Meseta andina de tierras planas y fértiles. Es el granero del departamento.",
+  // Obando: Aldana, Contadero, Córdoba, Cuaspud, Cumbal, Funes, Guachucal, Gualmatán, Iles, Ipiales, Potosí, Puerres, Pupiales
+  "#ffcccc": {
+    name: "Subregión Obando",
+    description: "Región andina fronteriza con Ecuador. Destaca por su dinamismo comercial y rica tradición indígena.",
     characteristics: [
-      "Topografía ondulada y plana en altura",
-      "Excelente producción agrícola (cereales, papa)",
-      "Clima frío",
-      "Túquerres es su municipio central"
-    ]
+      "Alta actividad comercial fronteriza (Ipiales).",
+      "Santuario de Las Lajas, maravilla arquitectónica y turística.",
+      "Páramos y volcanes nevados (Cumbal, Chiles).",
+      "Municipios: Ipiales, Aldana, Contadero, Córdoba, Cuaspud, Cumbal, Funes, Guachucal, Gualmatán, Iles, Potosí, Puerres, Pupiales"
+    ],
   },
-  "#f4b97f": {
-    name: "Subregión Los Abades",
-    description: "Ubicada en la estribación occidental de la cordillera. Zona de vocación agrícola y minera.",
-    characteristics: [
-      "Clima templado a cálido",
-      "Cultivos de caña panelera y café",
-      "Topografía montañosa",
-      "Incluye municipios como Samaniego"
-    ]
-  },
-  "#aade87": {
-    name: "Subregión Occidente",
-    description: "Región andina con clima templado muy agradable, conocida por sus artesanías en paja toquilla (sombreros).",
-    characteristics: [
-      "Artesanías reconocidas internacionalmente (Sandoná)",
-      "Producción de café y caña panelera",
-      "Clima templado y laderas escarpadas"
-    ]
-  },
-  "#c22938": {
-    name: "Subregión La Cordillera",
-    description: "Región noroccidental atravesada por ríos encañonados como el Patía.",
-    characteristics: [
-      "Geografía muy quebrada",
-      "Climas cálidos secos en los cañones",
-      "Agricultura de pancoger y frutales",
-      "Incluye Policarpa y Cumbitara"
-    ]
-  },
+  // Sabana: Guaitarilla, Imués, Ospina, Sapuyes, Túquerres
   "#e8f2ad": {
-    name: "Subregión Río Mayo",
-    description: "Ubicada al extremo norte del departamento, en el límite con el Cauca.",
+    name: "Subregión Sabana",
+    description: "Altiplano andino con tierras fértiles, considerado una de las principales despensas agrícolas de Nariño.",
     characteristics: [
-      "Valle cálido y seco",
-      "Producción de cítricos y frutales",
-      "Punto de entrada terrestre desde el interior del país"
-    ]
+      "Producción intensiva de papa, hortalizas y lácteos.",
+      "Clima frío y paisajes de páramo.",
+      "Túquerres es su principal centro comercial y de servicios.",
+      "Municipios: Túquerres, Guaitarilla, Imués, Ospina, Sapuyes"
+    ],
   },
+  // Abades: Providencia, Samaniego, Santacruz
   "#ebcef2": {
-    name: "Subregión Guambuyaco",
-    description: "Zona intermedia en las montañas andinas con valles fértiles y producción minera y agrícola.",
+    name: "Subregión Abades",
+    description: "Región andina con relieve montañoso que desciende hacia la costa. Tierra de músicos y artesanos.",
     characteristics: [
-      "Minería en algunos sectores",
-      "Producción agrícola diversificada",
-      "Clima templado"
-    ]
+      "Samaniego es conocido como ciudad paisaje y musical.",
+      "Economía cafetera y minería artesanal.",
+      "Relieve muy quebrado y zonas de ladera.",
+      "Municipios: Samaniego, Providencia, Santacruz (Guachavés)"
+    ],
   },
-
-  // === MUNICIPIOS (2.svg) Y DEFAULT ===
-  "default": {
-    name: "Municipio de Nariño",
-    description: "Información del municipio seleccionado. Al hacer clic en el mapa de municipios, podrás ver los datos detallados aquí.",
+  // Occidente: Ancuya, Consacá, Linares, Sandoná
+  "#ffadad": {
+    name: "Subregión Occidente",
+    description: "Región andina con clima templado muy agradable, famosa por sus artesanías en paja toquilla.",
     characteristics: [
-      "Datos demográficos próximos",
-      "Información económica",
-      "Aspectos culturales"
-    ]
+      "Artesanías reconocidas internacionalmente (sombreros en Sandoná).",
+      "Producción de café de alta calidad y caña panelera.",
+      "Sitios históricos como la Batalla de Bomboná (Consacá).",
+      "Municipios: Sandoná, Ancuya, Consacá, Linares"
+    ],
+  },
+  // Cordillera: Cumbitara, El Rosario, Leiva, Policarpa, Taminango
+  "#ffdea9": {
+    name: "Subregión Cordillera",
+    description: "Ubicada al noroccidente, caracterizada por la cuenca del río Patía y un clima más cálido y seco en las zonas bajas.",
+    characteristics: [
+      "Economía basada en cultivos de clima cálido como el maní y frutales.",
+      "Cañón del río Patía con paisajes semiáridos.",
+      "Zona de importancia agrícola y pecuaria.",
+      "Municipios: Policarpa, Cumbitara, El Rosario, Leiva, Taminango"
+    ],
+  },
+  // Centro: Pasto, Chachagüí, La Florida, Nariño, Tangua, Yacuanquer
+  "#f4b97f": {
+    name: "Subregión Centro",
+    description: "Corazón político y administrativo del departamento, dominado por el volcán Galeras.",
+    characteristics: [
+      "Pasto, ciudad capital y centro administrativo, comercial y universitario.",
+      "Carnaval de Negros y Blancos, Patrimonio Inmaterial de la Humanidad.",
+      "Santuario de Flora y Fauna Galeras.",
+      "Municipios: Pasto, Chachagüí, La Florida, Nariño, Tangua, Yacuanquer"
+    ],
+  },
+  // Juanambú: Arboleda, Buesaco, La Unión, San Lorenzo, San Pedro de Cartago
+  "#c6ecff": {
+    name: "Subregión Juanambú",
+    description: "Región cafetera por excelencia, atravesada por el histórico cañón del río Juanambú.",
+    characteristics: [
+      "La Unión es conocida como la capital cafetera de Nariño.",
+      "Alta producción de café pergamino especial.",
+      "Clima templado ideal para la agricultura.",
+      "Municipios: La Unión, Arboleda (Berruecos), Buesaco, San Lorenzo, San Pedro de Cartago"
+    ],
+  },
+  // Río Mayo: Albán, Belén, Colón, El Tablón de Gómez, La Cruz, San Bernardo, San Pablo
+  "#aade87": {
+    name: "Subregión Río Mayo",
+    description: "Región nororiental montañosa, con abundantes fuentes de agua y paisajes cordilleranos.",
+    characteristics: [
+      "Suelos fértiles para el café, frutales y ganadería.",
+      "Parque Nacional Natural Complejo Volcánico Doña Juana-Cascabel.",
+      "Importante reserva hídrica y de biodiversidad andina.",
+      "Municipios: La Cruz, Albán, Belén, Colón, El Tablón de Gómez, San Bernardo, San Pablo"
+    ],
+  },
+  // Guambuyaco: El Peñol, El Tambo, La Llanada, Los Andes Sotomayor
+  "#fffc9a": {
+    name: "Subregión Guambuyaco",
+    description: "Región de montañas y valles templados, con una combinación de economía agrícola y minera.",
+    characteristics: [
+      "Importante producción minera (oro en La Llanada y Los Andes).",
+      "Cultivos de caña panelera, café y frutales.",
+      "Terrenos quebrados atravesados por el río Guáitara.",
+      "Municipios: El Tambo, El Peñol, La Llanada, Los Andes (Sotomayor)"
+    ],
   }
+};
+
+// Also keep a mapping of specific region names or IDs just in case
+export const getRegionByColor = (color) => {
+  if (!color) return null;
+  // Format color to lowercase hex
+  const formattedColor = color.toLowerCase().trim();
+  
+  // Handle some common aliases or slight variations in SVG output
+  const colorMap = {
+    "#b8da6b": "#b8da6b", // Sanquianga
+    "#75c5f0": "#75c5f0", // Pacifico Sur
+    "#bebad7": "#bebad7", // Telembi
+    "#fffdc0": "#fffdc0", // Piedemonte
+    "#ffcccc": "#ffcccc", // Obando
+    "#e8f2ad": "#e8f2ad", // Sabana
+    "#ebcef2": "#ebcef2", // Abades
+    "#ffadad": "#ffadad", // Occidente
+    "#ffdea9": "#ffdea9", // Cordillera
+    "#f4b97f": "#f4b97f", // Centro (using an approximation for the center color)
+    "#c6ecff": "#c6ecff", // Juanambu (approximated light blue)
+    "#aade87": "#aade87", // Rio Mayo
+    "#fffc9a": "#fffc9a", // Guambuyaco
+  };
+  
+  const mappedKey = colorMap[formattedColor] || formattedColor;
+  return regionsData[mappedKey] || null;
 };
