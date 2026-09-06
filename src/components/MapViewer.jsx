@@ -96,6 +96,7 @@ export default function MapViewer() {
                 onRegionClick={handleRegionClick}
                 onRegionHover={handleRegionHover}
                 onRegionLeave={handleRegionLeave}
+                groupByColor={true}
               />
             ) : (
               <InlineSVGMap
@@ -103,6 +104,7 @@ export default function MapViewer() {
                 onRegionClick={handleRegionClick}
                 onRegionHover={handleRegionHover}
                 onRegionLeave={handleRegionLeave}
+                groupByColor={false}
               />
             )}
           </MapContainer3D>
