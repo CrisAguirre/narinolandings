@@ -1,6 +1,6 @@
 export const regionsData = {
   // Sanquianga: El Charco, La Tola, Mosquera, Olaya Herrera, Santa Bárbara
-  "#b8da6b": {
+  "#aade87": {
     name: "Subregión Sanquianga",
     description: "Ubicada en la llanura pacífica, caracterizada por sus manglares y ecosistemas de costa. Es una región rica en biodiversidad y recursos hídricos.",
     characteristics: [
@@ -11,7 +11,7 @@ export const regionsData = {
     ],
   },
   // Pacífico Sur: Tumaco, Francisco Pizarro
-  "#75c5f0": {
+  "#fffdc0": {
     name: "Subregión Pacífico Sur",
     description: "Zona costera de gran importancia portuaria y turística. Principal centro urbano y económico del pacífico nariñense.",
     characteristics: [
@@ -22,7 +22,7 @@ export const regionsData = {
     ],
   },
   // Telembí: Barbacoas, Magüí Payán, Roberto Payán
-  "#bebad7": {
+  "#ebcef2": {
     name: "Subregión Telembí",
     description: "Región selvática y lluviosa, cruzada por el río Telembí. Históricamente conocida por su riqueza minera.",
     characteristics: [
@@ -33,7 +33,7 @@ export const regionsData = {
     ],
   },
   // Piedemonte Costero: Mallama, Ricaurte
-  "#fffdc0": {
+  "#e8f2ad": {
     name: "Subregión Piedemonte Costero",
     description: "Zona de transición entre los Andes y la llanura pacífica, caracterizada por su escarpada topografía y alta humedad.",
     characteristics: [
@@ -55,7 +55,7 @@ export const regionsData = {
     ],
   },
   // Sabana: Guaitarilla, Imués, Ospina, Sapuyes, Túquerres
-  "#e8f2ad": {
+  "#bebad7": {
     name: "Subregión Sabana",
     description: "Altiplano andino con tierras fértiles, considerado una de las principales despensas agrícolas de Nariño.",
     characteristics: [
@@ -66,7 +66,7 @@ export const regionsData = {
     ],
   },
   // Abades: Providencia, Samaniego, Santacruz
-  "#ebcef2": {
+  "#fffc9a": {
     name: "Subregión Abades",
     description: "Región andina con relieve montañoso que desciende hacia la costa. Tierra de músicos y artesanos.",
     characteristics: [
@@ -88,7 +88,7 @@ export const regionsData = {
     ],
   },
   // Cordillera: Cumbitara, El Rosario, Leiva, Policarpa, Taminango
-  "#ffdea9": {
+  "#f4b97f": {
     name: "Subregión Cordillera",
     description: "Ubicada al noroccidente, caracterizada por la cuenca del río Patía y un clima más cálido y seco en las zonas bajas.",
     characteristics: [
@@ -99,7 +99,7 @@ export const regionsData = {
     ],
   },
   // Centro: Pasto, Chachagüí, La Florida, Nariño, Tangua, Yacuanquer
-  "#f4b97f": {
+  "#75c5f0": {
     name: "Subregión Centro",
     description: "Corazón político y administrativo del departamento, dominado por el volcán Galeras.",
     characteristics: [
@@ -121,7 +121,7 @@ export const regionsData = {
     ],
   },
   // Río Mayo: Albán, Belén, Colón, El Tablón de Gómez, La Cruz, San Bernardo, San Pablo
-  "#aade87": {
+  "#ffdea9": {
     name: "Subregión Río Mayo",
     description: "Región nororiental montañosa, con abundantes fuentes de agua y paisajes cordilleranos.",
     characteristics: [
@@ -132,7 +132,7 @@ export const regionsData = {
     ],
   },
   // Guambuyaco: El Peñol, El Tambo, La Llanada, Los Andes Sotomayor
-  "#fffc9a": {
+  "#b8da6b": {
     name: "Subregión Guambuyaco",
     description: "Región de montañas y valles templados, con una combinación de economía agrícola y minera.",
     characteristics: [
@@ -152,19 +152,19 @@ export const getRegionByColor = (color) => {
   
   // Handle some common aliases or slight variations in SVG output
   const colorMap = {
-    "#b8da6b": "#b8da6b", // Sanquianga
-    "#75c5f0": "#75c5f0", // Pacifico Sur
-    "#bebad7": "#bebad7", // Telembi
-    "#fffdc0": "#fffdc0", // Piedemonte
+    "#aade87": "#aade87", // Sanquianga
+    "#fffdc0": "#fffdc0", // Pacifico Sur
+    "#ebcef2": "#ebcef2", // Telembi
+    "#e8f2ad": "#e8f2ad", // Piedemonte
     "#ffcccc": "#ffcccc", // Obando
-    "#e8f2ad": "#e8f2ad", // Sabana
-    "#ebcef2": "#ebcef2", // Abades
+    "#bebad7": "#bebad7", // Sabana
+    "#fffc9a": "#fffc9a", // Abades
     "#ffadad": "#ffadad", // Occidente
-    "#ffdea9": "#ffdea9", // Cordillera
-    "#f4b97f": "#f4b97f", // Centro (using an approximation for the center color)
-    "#c6ecff": "#c6ecff", // Juanambu (approximated light blue)
-    "#aade87": "#aade87", // Rio Mayo
-    "#fffc9a": "#fffc9a", // Guambuyaco
+    "#f4b97f": "#f4b97f", // Cordillera
+    "#75c5f0": "#75c5f0", // Centro 
+    "#c6ecff": "#c6ecff", // Juanambu 
+    "#ffdea9": "#ffdea9", // Rio Mayo
+    "#b8da6b": "#b8da6b", // Guambuyaco
   };
   
   const mappedKey = colorMap[formattedColor] || formattedColor;

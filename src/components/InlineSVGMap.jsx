@@ -128,8 +128,33 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
           const color = path.getAttribute("data-fill-color");
           if (onRegionHover) onRegionHover(color);
         } else {
+          let muniName = path.getAttribute("data-muni-name");
+          if (!muniName) {
+            const pathBBox = path.getBoundingClientRect();
+            const px = pathBBox.left + pathBBox.width / 2;
+            const py = pathBBox.top + pathBBox.height / 2;
+            
+            let bestName = "Municipio (ID: " + path.getAttribute("data-region-id") + ")";
+            let bestDist = Infinity;
+            
+            const tspans = containerRef.current.querySelectorAll("tspan");
+            tspans.forEach(tspan => {
+              const tBBox = tspan.getBoundingClientRect();
+              // text BBox center
+              const tx = tBBox.left + tBBox.width / 2;
+              const ty = tBBox.top + tBBox.height / 2;
+              const dist = Math.sqrt((px - tx)**2 + (py - ty)**2);
+              if (dist < bestDist && dist < 150) { 
+                bestDist = dist;
+                bestName = tspan.textContent.trim();
+              }
+            });
+            muniName = bestName;
+            path.setAttribute("data-muni-name", muniName);
+          }
+          
           const id = path.getAttribute("data-region-id");
-          if (onRegionHover) onRegionHover(id);
+          if (onRegionHover) onRegionHover({ id, name: muniName });
         }
       }
     }
