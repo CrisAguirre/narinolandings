@@ -121,6 +121,26 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
         p.style.opacity = "0.85";
       });
 
+      // For municipality mode: dim all OTHER Nariño paths for contrast
+      if (!groupByColor && path.getAttribute("data-map-type") === "narino") {
+        const allNarino = containerRef.current.querySelectorAll('.narino-path');
+        allNarino.forEach(p => {
+          if (!paths.includes(p)) {
+            p.style.filter = "brightness(0.7) saturate(0.5)";
+            p.style.opacity = "0.5";
+          }
+        });
+        // Add a bright stroke to the hovered municipality
+        paths.forEach(p => {
+          p.setAttribute("data-orig-stroke", p.style.stroke || "");
+          p.setAttribute("data-orig-stroke-width", p.style.strokeWidth || "");
+          p.style.stroke = "#ffffff";
+          p.style.strokeWidth = "2.5px";
+          p.style.filter = "brightness(1.5) drop-shadow(0 0 14px rgba(59, 130, 246, 0.8))";
+          p.style.opacity = "1";
+        });
+      }
+
       if (path.getAttribute("data-map-type") === "colombia") {
         if (onColombiaHover) onColombiaHover(path.getAttribute("data-fill-color"));
       } else {
@@ -167,7 +187,21 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
       paths.forEach(p => {
         p.style.filter = "";
         p.style.opacity = "";
+        // Restore original stroke if it was changed
+        if (p.hasAttribute("data-orig-stroke")) {
+          p.style.stroke = p.getAttribute("data-orig-stroke");
+          p.style.strokeWidth = p.getAttribute("data-orig-stroke-width");
+        }
       });
+      
+      // Restore all other Nariño paths in municipality mode
+      if (!groupByColor) {
+        const allNarino = containerRef.current.querySelectorAll('.narino-path');
+        allNarino.forEach(p => {
+          p.style.filter = "";
+          p.style.opacity = "";
+        });
+      }
       
       if (path.getAttribute("data-map-type") === "colombia") {
         if (onColombiaLeave) onColombiaLeave();

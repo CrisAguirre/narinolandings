@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banco de Preguntas - Mapa Político de Nariño</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      color: #1e293b;
+      background: #f8fafc;
+      line-height: 1.6;
+      padding: 0;
+    }
+
+    .page {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 40px 50px;
+    }
+
+    /* Cover */
+    .cover {
+      text-align: center;
+      padding: 60px 0 40px;
+      border-bottom: 3px solid #4f46e5;
+      margin-bottom: 30px;
+    }
+    .cover h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 8px;
+    }
+    .cover h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #4f46e5;
+      margin-bottom: 16px;
+    }
+    .cover .subtitle {
+      font-size: 14px;
+      color: #64748b;
+      max-width: 500px;
+      margin: 0 auto 20px;
+    }
+    .cover .meta {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      font-size: 13px;
+      color: #94a3b8;
+      margin-top: 20px;
+    }
+    .cover .meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Info box */
+    .info-box {
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin-bottom: 30px;
+      font-size: 13px;
+      color: #3730a3;
+    }
+    .info-box strong { color: #1e1b4b; }
+
+    /* Question block */
+    .question {
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .question:last-of-type {
+      border-bottom: none;
+    }
+    .question-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .question-number {
+      background: #4f46e5;
+      color: white;
+      font-weight: 700;
+      font-size: 12px;
+      min-width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .question-number.multi {
+      background: #7c3aed;
+    }
+    .question-text {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1e293b;
+      padding-top: 3px;
+    }
+    .question-badge {
+      display: inline-block;
+      background: #f3e8ff;
+      color: #7c3aed;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    /* Options */
+    .options {
+      list-style: none;
+      padding-left: 38px;
+    }
+    .options li {
+      font-size: 13px;
+      color: #475569;
+      padding: 5px 0 5px 24px;
+      position: relative;
+    }
+    .options li::before {
+      content: attr(data-letter);
+      position: absolute;
+      left: 0;
+      font-weight: 600;
+      color: #94a3b8;
+    }
+
+    /* Answer key section */
+    .answer-key-section {
+      margin-top: 40px;
+      padding-top: 30px;
+      border-top: 3px solid #4f46e5;
+    }
+    .answer-key-section h2 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 6px;
+    }
+    .answer-key-section .note {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+    .answers-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+    }
+    .answer-item {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      text-align: center;
+      font-size: 13px;
+    }
+    .answer-item .num {
+      font-weight: 700;
+      color: #4f46e5;
+    }
+    .answer-item .ans {
+      color: #1e293b;
+      font-weight: 500;
+    }
+
+    /* Student info form */
+    .student-form {
+      border: 2px dashed #cbd5e1;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .student-form h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #475569;
+      margin-bottom: 12px;
+    }
+    .form-row {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    .form-field {
+      flex: 1;
+      font-size: 13px;
+      color: #64748b;
+    }
+    .form-field .line {
+      border-bottom: 1px solid #94a3b8;
+      height: 24px;
+      margin-top: 4px;
+    }
+
+    /* Print styles */
+    @media print {
+      body { background: white; }
+      .page { 
+        padding: 20px 30px; 
+        max-width: none;
+      }
+      .question { 
+        page-break-inside: avoid; 
+      }
+      .answer-key-section { 
+        page-break-before: always; 
+      }
+      .no-print { display: none !important; }
+    }
+
+    /* Print button */
+    .print-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(79, 70, 229, 0.4);
+      transition: all 0.2s;
+      z-index: 100;
+    }
+    .print-btn:hover {
+      background: #4338ca;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(79, 70, 229, 0.5);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 11px;
+      color: #94a3b8;
+      margin-top: 30px;
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">🖨️ Imprimir / Guardar como PDF</button>
+
+<div class="page">
+
+  <div class="cover">
+    <h1>Banco de Preguntas</h1>
+    <h2>Mapa Politico del Departamento de Narino</h2>
+    <p class="subtitle">Evaluacion de conocimientos sobre las subregiones, municipios, geografia, cultura y economia del departamento de Narino, Colombia.</p>
+    <div class="meta">
+      <span>50 preguntas</span>
+      <span>Seleccion multiple</span>
+      <span>Algunas con 2 respuestas correctas</span>
+    </div>
+  </div>
+
+  <div class="student-form">
+    <h3>DATOS DEL ESTUDIANTE</h3>
+    <div class="form-row">
+      <div class="form-field">Nombre completo: <div class="line"></div></div>
+      <div class="form-field">Grado: <div class="line"></div></div>
+    </div>
+    <div class="form-row">
+      <div class="form-field">Institucion Educativa: <div class="line"></div></div>
+      <div class="form-field">Fecha: <div class="line"></div></div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>Instrucciones:</strong> Lee cada pregunta cuidadosamente y selecciona la opcion correcta. Las preguntas marcadas con <span style="background:#f3e8ff;color:#7c3aed;padding:1px 6px;border-radius:8px;font-weight:600;font-size:10px;">2 RESPUESTAS</span> requieren que selecciones <strong>dos</strong> opciones correctas.
+  </div>
+
+  <div id="questions-container"></div>
+
+  <div class="answer-key-section">
+    <h2>Clave de Respuestas</h2>
+    <p class="note">Solo para uso del docente. Recortar antes de entregar al estudiante.</p>
+    <div class="answers-grid" id="answers-grid"></div>
+  </div>
+
+  <footer>
+    Mapa Politico de Narino - Material Educativo - narinolandings.vercel.app
+  </footer>
+
+</div>
+
+<script>
+const questions = [
+  { id:1, text:"Cual de las siguientes subregiones se ubica en la costa pacifica y es famosa por su puerto maritimo?", options:["Subregion Centro","Subregion Pacifico Sur","Subregion Sabana","Subregion Juanambu"], correct:[1] },
+  { id:2, text:"La Subregion Centro se caracteriza por tener como municipio principal a:", options:["Ipiales","Tumaco","Pasto","Sandona"], correct:[2] },
+  { id:3, text:"Selecciona las DOS subregiones que limitan con el Oceano Pacifico:", options:["Sanquianga","Obando","Pacifico Sur","Cordillera"], correct:[0,2] },
+  { id:4, text:"Que subregion andina fronteriza con Ecuador destaca por el Santuario de Las Lajas?", options:["Subregion Obando","Subregion Sabana","Subregion Occidente","Subregion Rio Mayo"], correct:[0] },
+  { id:5, text:"Cuales son DOS caracteristicas principales de la Subregion Telembi?", options:["Alta actividad comercial fronteriza","Densa selva humeda tropical","Tradicion minera aurifera (oro)","Produccion intensiva de papa"], correct:[1,2] },
+  { id:6, text:"En que subregion se ubican los municipios de Tuquerres y Guaitarilla?", options:["Subregion Centro","Subregion Sabana","Subregion Abades","Subregion Guambuyaco"], correct:[1] },
+  { id:7, text:"Selecciona los DOS municipios que pertenecen a la Subregion Piedemonte Costero:", options:["Mallama","Ricaurte","Barbacoas","Tumaco"], correct:[0,1] },
+  { id:8, text:"Que subregion es conocida por tener un clima templado y ser famosa por sus artesanias en paja toquilla (sombreros)?", options:["Subregion Occidente","Subregion Juanambu","Subregion Rio Mayo","Subregion Telembi"], correct:[0] },
+  { id:9, text:"Cuales son DOS municipios de la Subregion Occidente?", options:["Sandona","Pasto","Consaca","Ipiales"], correct:[0,2] },
+  { id:10, text:"La Subregion Juanambu es famosa principalmente por su produccion de:", options:["Oro y plata","Cafe pergamino especial","Papa y hortalizas","Pesca artesanal"], correct:[1] },
+  { id:11, text:"Selecciona DOS subregiones que se caracterizan por una fuerte tradicion minera (especialmente oro):", options:["Subregion Sabana","Subregion Telembi","Subregion Guambuyaco","Subregion Centro"], correct:[1,2] },
+  { id:12, text:"Que municipio NO pertenece a la Subregion Centro?", options:["Pasto","Chachagui","Ipiales","Tangua"], correct:[2] },
+  { id:13, text:"Identifica DOS caracteristicas de la Subregion Rio Mayo:", options:["Suelos fertiles para cafe y frutales","Presencia de manglares","Complejo Volcanico Dona Juana-Cascabel","Frontera con Ecuador"], correct:[0,2] },
+  { id:14, text:"En que subregion se realiza principalmente el Carnaval de Negros y Blancos?", options:["Subregion Obando","Subregion Centro","Subregion Pacifico Sur","Subregion Abades"], correct:[1] },
+  { id:15, text:"Selecciona DOS municipios de la Subregion Obando:", options:["Ipiales","Tuquerres","Cumbal","Samaniego"], correct:[0,2] },
+  { id:16, text:"La Reserva Natural La Planada se ubica en la subregion de:", options:["Sanquianga","Piedemonte Costero","Cordillera","Rio Mayo"], correct:[1] },
+  { id:17, text:"Cuales de los siguientes son DOS ecosistemas presentes en Narino?", options:["Desierto arido","Paramos andinos","Manglares del Pacifico","Selva amazonica profunda"], correct:[1,2] },
+  { id:18, text:"Cual es el municipio conocido como la 'capital cafetera de Narino' en la subregion Juanambu?", options:["La Union","Buesaco","Arboleda","San Lorenzo"], correct:[0] },
+  { id:19, text:"Selecciona las DOS subregiones por las que atraviesa o tiene influencia el rio Patia:", options:["Subregion Cordillera","Subregion Centro","Subregion Abades","Subregion Sanquianga"], correct:[0,2] },
+  { id:20, text:"Que subregion es conocida por Samaniego, llamada 'ciudad paisaje y musical'?", options:["Subregion Abades","Subregion Occidente","Subregion Sabana","Subregion Centro"], correct:[0] },
+  { id:21, text:"Cuantas subregiones administrativas tiene el departamento de Narino?", options:["10","13","15","64"], correct:[1] },
+  { id:22, text:"Selecciona DOS municipios pertenecientes a la Subregion Sanquianga:", options:["El Charco","Tumaco","Mosquera","Barbacoas"], correct:[0,2] },
+  { id:23, text:"La Subregion Sabana es conocida principalmente como:", options:["Centro minero","Despensa agricola y lechera","Puerto pesquero","Zona selvatica"], correct:[1] },
+  { id:24, text:"Identifica DOS volcanes importantes ubicados en Narino:", options:["Volcan Galeras","Nevado del Ruiz","Volcan Cumbal","Pico Cristobal Colon"], correct:[0,2] },
+  { id:25, text:"Que municipio de la subregion Pacifico Sur es el principal puerto maritimo de Narino?", options:["Francisco Pizarro","Tumaco","Barbacoas","El Charco"], correct:[1] },
+  { id:26, text:"Selecciona DOS caracteristicas del clima en la Subregion Telembi:", options:["Clima frio de paramo","Alta pluviosidad (lluvias)","Humedad de selva tropical","Clima desertico"], correct:[1,2] },
+  { id:27, text:"En que subregion se encuentra el municipio de Cumbitara?", options:["Subregion Cordillera","Subregion Abades","Subregion Guambuyaco","Subregion Occidente"], correct:[0] },
+  { id:28, text:"Cuales DOS municipios hacen parte de la Subregion Guambuyaco?", options:["El Penol","La Llanada","Sandona","Yacuanquer"], correct:[0,1] },
+  { id:29, text:"La comunidad indigena Awa habita principalmente en la subregion de:", options:["Sabana","Obando","Piedemonte Costero","Centro"], correct:[2] },
+  { id:30, text:"Selecciona DOS de las principales fuentes de economia en la Subregion Occidente:", options:["Pesca industrial","Artesanias (paja toquilla)","Produccion de cafe","Turismo de nieve"], correct:[1,2] },
+  { id:31, text:"El Santuario de Flora y Fauna Galeras se encuentra principalmente en la subregion:", options:["Subregion Obando","Subregion Centro","Subregion Sabana","Subregion Rio Mayo"], correct:[1] },
+  { id:32, text:"Selecciona DOS municipios fronterizos con Ecuador en Narino:", options:["Ipiales","Pasto","Cumbal","Buesaco"], correct:[0,2] },
+  { id:33, text:"En que subregion se encuentra el municipio de Chachagui, donde se ubica el aeropuerto principal?", options:["Subregion Centro","Subregion Juanambu","Subregion Occidente","Subregion Cordillera"], correct:[0] },
+  { id:34, text:"Senala DOS caracteristicas de la Subregion Sanquianga:", options:["Grandes manglares","Cultivo intenso de papa","Economia pesquera","Capital departamental"], correct:[0,2] },
+  { id:35, text:"Cual es la capital del departamento de Narino?", options:["Ipiales","Tumaco","San Juan de Pasto","Tuquerres"], correct:[2] },
+  { id:36, text:"Selecciona DOS municipios de la Subregion Rio Mayo:", options:["La Cruz","Belen","Contadero","Potosi"], correct:[0,1] },
+  { id:37, text:"Que departamento limita al norte con Narino?", options:["Putumayo","Cauca","Valle del Cauca","Choco"], correct:[1] },
+  { id:38, text:"Identifica DOS oceanos o paises que limitan con el departamento de Narino:", options:["Oceano Atlantico","Ecuador","Oceano Pacifico","Peru"], correct:[1,2] },
+  { id:39, text:"El municipio de Barbacoas pertenece a la subregion:", options:["Pacifico Sur","Telembi","Sanquianga","Piedemonte Costero"], correct:[1] },
+  { id:40, text:"Selecciona DOS municipios de la Subregion Abades:", options:["Samaniego","Providencia","Taminango","Policarpa"], correct:[0,1] },
+  { id:41, text:"Que rio forma un importante canon en la Subregion Juanambu?", options:["Rio Mira","Rio Juanambu","Rio Telembi","Rio Patia"], correct:[1] },
+  { id:42, text:"Selecciona DOS productos agricolas fundamentales en la Subregion Sabana:", options:["Papa","Lacteos (ganaderia lechera)","Cacao","Algodon"], correct:[0,1] },
+  { id:43, text:"En que subregion se encuentra la ciudad de Ipiales?", options:["Subregion Obando","Subregion Sabana","Subregion Centro","Subregion Occidente"], correct:[0] },
+  { id:44, text:"Selecciona DOS municipios que son considerados puertos o zonas costeras:", options:["Tumaco","Pasto","Francisco Pizarro","Ricaurte"], correct:[0,2] },
+  { id:45, text:"La Subregion Guambuyaco es atravesada por el rio:", options:["Guaitara","Amazonas","Cauca","Magdalena"], correct:[0] },
+  { id:46, text:"Selecciona DOS caracteristicas culturales de Narino:", options:["Carnaval de Negros y Blancos","Feria de las Flores","Artesania en Barniz de Pasto","Festival Vallenato"], correct:[0,2] },
+  { id:47, text:"A que subregion pertenece el municipio de San Pedro de Cartago?", options:["Subregion Juanambu","Subregion Cordillera","Subregion Rio Mayo","Subregion Centro"], correct:[0] },
+  { id:48, text:"Selecciona DOS municipios de la Subregion Cordillera:", options:["Policarpa","El Rosario","Aldana","Funes"], correct:[0,1] },
+  { id:49, text:"Que maravilla arquitectonica se encuentra en el municipio de Ipiales?", options:["Catedral de Sal","Santuario de Las Lajas","Castillo San Felipe","Santuario de Monserrate"], correct:[1] },
+  { id:50, text:"Identifica DOS zonas de alta produccion cafetera en Narino:", options:["Subregion Juanambu","Subregion Occidente","Subregion Sanquianga","Subregion Sabana"], correct:[0,1] }
+];
+
+const letters = ['A', 'B', 'C', 'D'];
+
+const container = document.getElementById('questions-container');
+questions.forEach(q => {
+  const isMulti = q.correct.length > 1;
+  const div = document.createElement('div');
+  div.className = 'question';
+  div.innerHTML = `
+    <div class="question-header">
+      <div class="question-number ${isMulti ? 'multi' : ''}">${q.id}</div>
+      <div class="question-text">
+        ${q.text}
+        ${isMulti ? '<span class="question-badge">2 RESPUESTAS</span>' : ''}
+      </div>
+    </div>
+    <ul class="options">
+      ${q.options.map((opt, i) => `<li data-letter="${letters[i]})">${opt}</li>`).join('')}
+    </ul>
+  `;
+  container.appendChild(div);
+});
+
+const grid = document.getElementById('answers-grid');
+questions.forEach(q => {
+  const ansLetters = q.correct.map(i => letters[i]).join(', ');
+  const item = document.createElement('div');
+  item.className = 'answer-item';
+  item.innerHTML = `<span class="num">${q.id}.</span> <span class="ans">${ansLetters}</span>`;
+  grid.appendChild(item);
+});
+</script>
+
+</body>
+</html>
