@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { margin: 0; background: white; font-family: sans-serif; }
+    svg { width: 100vw; height: auto; }
+    #output { position: fixed; top: 0; right: 0; background: white; border: 2px solid black; padding: 10px; max-width: 400px; font-size: 14px; z-index: 9999; max-height: 100vh; overflow: auto; }
+    #output div { margin: 2px 0; }
+  </style>
+</head>
+<body>
+  <div id="output"><b>Loading...</b></div>
+  <div id="map"></div>
+  <script>
+    fetch('/assets/1.svg').then(r => r.text()).then(svg => {
+      document.getElementById('map').innerHTML = svg;
+      
+      setTimeout(() => {
+        const tspans = document.querySelectorAll('tspan');
+        const paths = document.querySelectorAll('path');
+        let html = '<b>Color Mapping Results:</b><br>';
+        
+        tspans.forEach(tspan => {
+          const text = tspan.textContent.trim();
+          if (!text) return;
+          
+          const textBBox = tspan.getBoundingClientRect();
+          const tx = textBBox.left + textBBox.width / 2;
+          const ty = textBBox.top + textBBox.height / 2;
+          
+          let bestColor = 'none';
+          let minDist = Infinity;
+          
+          paths.forEach(p => {
+            const style = p.getAttribute('style') || '';
+            const fillMatch = style.match(/fill:\s*(#[0-9a-fA-F]{6})/i);
+            const color = fillMatch ? fillMatch[1].toLowerCase() : 'none';
+            
+            // Skip background/border colors
+            if (['none','#e1e1e1','#f2f2f2','#ffffff','#fefee9','#e0e0e0','#000000','#c22938','#00dcff'].includes(color)) return;
+            
+            const pBBox = p.getBoundingClientRect();
+            const px = pBBox.left + pBBox.width / 2;
+            const py = pBBox.top + pBBox.height / 2;
+            
+            const dist = Math.hypot(tx - px, ty - py);
+            if (dist < minDist) {
+              minDist = dist;
+              bestColor = color;
+            }
+          });
+          
+          html += '<div><span style="display:inline-block;width:20px;height:20px;background:' + bestColor + ';vertical-align:middle;border:1px solid #333;margin-right:5px;"></span>' + text + ' = ' + bestColor + '</div>';
+        });
+        
+        document.getElementById('output').innerHTML = html;
+      }, 500);
+    });
+  </script>
+</body>
+</html>

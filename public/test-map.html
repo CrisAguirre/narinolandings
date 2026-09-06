@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { margin: 0; background: white; }
+    svg { width: 100vw; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+    fetch('/assets/1.svg').then(r => r.text()).then(svg => {
+      document.getElementById('map').innerHTML = svg;
+      
+      const paths = document.querySelectorAll('path');
+      paths.forEach(p => {
+        const style = p.getAttribute('style') || '';
+        const fill = p.getAttribute('fill') || '';
+        const full = (style + fill).toLowerCase();
+        
+        if (full.includes('#fffc9a')) {
+          p.style.stroke = 'red';
+          p.style.strokeWidth = '10px';
+        } else if (full.includes('#ffdea9')) {
+          p.style.stroke = 'blue';
+          p.style.strokeWidth = '10px';
+        } else if (full.includes('#aade87')) {
+          p.style.stroke = 'green';
+          p.style.strokeWidth = '10px';
+        } else if (full.includes('#b8da6b')) {
+          p.style.stroke = 'purple';
+          p.style.strokeWidth = '10px';
+        } else if (full.includes('#ebcef2')) {
+          p.style.stroke = 'cyan';
+          p.style.strokeWidth = '10px';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

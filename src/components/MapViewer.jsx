@@ -178,7 +178,7 @@ export default function MapViewer() {
 
       {/* Evaluation Module will go here */}
       {activeTab === "evaluacion" && (
-        <div className="flex-1 overflow-y-auto w-full h-full">
+        <div className="flex-1 overflow-y-auto w-full relative z-10">
           <EvaluationTab />
         </div>
       )}
