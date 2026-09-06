@@ -66,7 +66,7 @@ export const regionsData = {
     ],
   },
   // Abades: Providencia, Samaniego, Santacruz
-  "#fffc9a": {
+  "#ffd000": {
     name: "Subregión Abades",
     description: "Región andina con relieve montañoso que desciende hacia la costa. Tierra de músicos y artesanos.",
     characteristics: [
@@ -110,7 +110,7 @@ export const regionsData = {
     ],
   },
   // Juanambú: Arboleda, Buesaco, La Unión, San Lorenzo, San Pedro de Cartago
-  "#c6ecff": {
+  "#b8da6b": {
     name: "Subregión Juanambú",
     description: "Región cafetera por excelencia, atravesada por el histórico cañón del río Juanambú.",
     characteristics: [
@@ -132,7 +132,7 @@ export const regionsData = {
     ],
   },
   // Guambuyaco: El Peñol, El Tambo, La Llanada, Los Andes Sotomayor
-  "#b8da6b": {
+  "#fffc9a": {
     name: "Subregión Guambuyaco",
     description: "Región de montañas y valles templados, con una combinación de economía agrícola y minera.",
     characteristics: [
@@ -158,13 +158,13 @@ export const getRegionByColor = (color) => {
     "#e8f2ad": "#e8f2ad", // Piedemonte
     "#ffcccc": "#ffcccc", // Obando
     "#bebad7": "#bebad7", // Sabana
-    "#fffc9a": "#fffc9a", // Abades
+    "#ffd000": "#ffd000", // Abades
     "#ffadad": "#ffadad", // Occidente
     "#f4b97f": "#f4b97f", // Cordillera
     "#75c5f0": "#75c5f0", // Centro 
-    "#c6ecff": "#c6ecff", // Juanambu 
+    "#b8da6b": "#b8da6b", // Juanambu 
     "#ffdea9": "#ffdea9", // Rio Mayo
-    "#b8da6b": "#b8da6b", // Guambuyaco
+    "#fffc9a": "#fffc9a", // Guambuyaco
   };
   
   const mappedKey = colorMap[formattedColor] || formattedColor;
