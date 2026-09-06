@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getRandomQuestions } from '../data/questionsBank';
+import { getRandomQuestions, questionsBank } from '../data/questionsBank';
+import jsPDF from 'jspdf';
+import 'jspdf-autotable';
 
 export default function EvaluationTab() {
   const [step, setStep] = useState(1); // 1: Form, 2: Quiz, 3: Results
@@ -25,6 +27,42 @@ export default function EvaluationTab() {
 
   const handleInfoChange = (e) => {
     setStudentInfo({ ...studentInfo, [e.target.name]: e.target.value });
+  };
+
+  const generatePDF = () => {
+    const doc = new jsPDF();
+    doc.setFontSize(18);
+    doc.text("Banco de Preguntas - Nariño Interactivo", 14, 20);
+    
+    doc.setFontSize(12);
+    doc.text("A continuación, se presentan las 50 preguntas de la evaluación con sus respuestas correctas.", 14, 28);
+    
+    const tableData = questionsBank.map((q, idx) => {
+      // Find the correct answer text(s)
+      const correctAnswersText = q.correct.map(cIdx => q.options[cIdx]).join(" Y ");
+      return [
+        (idx + 1).toString(),
+        q.text,
+        q.options.join("\n"),
+        correctAnswersText
+      ];
+    });
+
+    doc.autoTable({
+      startY: 35,
+      head: [['#', 'Pregunta', 'Opciones', 'Respuesta Correcta']],
+      body: tableData,
+      styles: { fontSize: 9, cellPadding: 3 },
+      columnStyles: {
+        0: { cellWidth: 10 },
+        1: { cellWidth: 60 },
+        2: { cellWidth: 70 },
+        3: { cellWidth: 40 }
+      },
+      headStyles: { fillColor: [79, 70, 229] }, // Indigo 600
+    });
+
+    doc.save("Banco_de_Preguntas_Narino.pdf");
   };
 
   const startQuiz = (e) => {
@@ -177,6 +215,14 @@ export default function EvaluationTab() {
                 className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2.5 px-4 rounded-lg shadow-lg hover:shadow-indigo-500/30 transition-all"
               >
                 Comenzar Evaluación
+              </button>
+              <button 
+                type="button"
+                onClick={generatePDF}
+                className="w-full mt-3 bg-slate-700 hover:bg-slate-600 text-white font-semibold py-2 px-4 rounded-lg shadow transition-colors flex justify-center items-center gap-2"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                Descargar Banco de Preguntas (PDF)
               </button>
             </div>
           </form>
