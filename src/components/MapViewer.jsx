@@ -65,33 +65,33 @@ export default function MapViewer() {
     <div className="flex flex-col h-full overflow-hidden pb-6 relative">
       
       {/* Header */}
-      <div className="absolute top-0 left-0 right-0 p-6 z-20 pointer-events-none text-center">
-        <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400 drop-shadow-sm mb-2">
+      <div className="absolute top-0 left-0 right-0 p-4 md:p-6 z-20 pointer-events-none text-center">
+        <h1 className="text-2xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400 drop-shadow-sm mb-1 md:mb-2 mt-2 md:mt-0">
           Nariño Interactivo 3D
         </h1>
-        <p className="text-slate-300 max-w-2xl mx-auto drop-shadow-md bg-slate-900/50 p-2 rounded-lg backdrop-blur-sm text-sm">
+        <p className="text-slate-300 max-w-2xl mx-auto drop-shadow-md bg-slate-900/50 p-2 rounded-lg backdrop-blur-sm text-xs md:text-sm hidden sm:block">
           Explora el departamento de Nariño a través de su división regional y municipal. Haz clic en las zonas para más información.
         </p>
       </div>
 
       {/* Tabs */}
-      <div className="flex justify-center mt-32 mb-4 z-10 pointer-events-auto">
-        <div className="bg-slate-800/80 backdrop-blur-md p-1 rounded-full border border-slate-700/50 flex shadow-lg">
+      <div className="flex justify-center mt-20 md:mt-32 mb-2 md:mb-4 z-10 pointer-events-auto px-4">
+        <div className="bg-slate-800/80 backdrop-blur-md p-1 rounded-3xl md:rounded-full border border-slate-700/50 flex flex-wrap justify-center shadow-lg gap-1 md:gap-0 max-w-full">
           <button 
             onClick={() => setActiveTab("subregiones")}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeTab === 'subregiones' ? 'bg-teal-500 text-white shadow-md' : 'text-slate-300 hover:text-white hover:bg-slate-700/50'}`}
+            className={`px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${activeTab === 'subregiones' ? 'bg-teal-500 text-white shadow-md' : 'text-slate-300 hover:text-white hover:bg-slate-700/50'}`}
           >
             Subregiones
           </button>
           <button 
             onClick={() => setActiveTab("municipios")}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeTab === 'municipios' ? 'bg-teal-500 text-white shadow-md' : 'text-slate-300 hover:text-white hover:bg-slate-700/50'}`}
+            className={`px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${activeTab === 'municipios' ? 'bg-teal-500 text-white shadow-md' : 'text-slate-300 hover:text-white hover:bg-slate-700/50'}`}
           >
             Municipios
           </button>
           <button 
             onClick={() => setActiveTab("evaluacion")}
-            className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${activeTab === 'evaluacion' ? 'bg-teal-500 text-white shadow-md' : 'text-slate-300 hover:text-white hover:bg-slate-700/50'}`}
+            className={`px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-medium transition-all ${activeTab === 'evaluacion' ? 'bg-teal-500 text-white shadow-md' : 'text-slate-300 hover:text-white hover:bg-slate-700/50'}`}
           >
             Evaluación
           </button>
@@ -99,10 +99,10 @@ export default function MapViewer() {
       </div>
 
       {activeTab !== "evaluacion" && (
-        <div className="flex-1 relative flex items-center justify-center">
+        <div className="flex-1 relative flex flex-col md:flex-row items-center justify-center">
           
           {/* Main Map View */}
-          <div className="w-full max-w-4xl h-full p-4 relative">
+          <div className="w-full max-w-4xl h-full p-2 md:p-4 relative">
             {activeTab === "subregiones" ? (
               <InlineSVGMap 
                 svgPath="/assets/1.svg" 
@@ -125,7 +125,7 @@ export default function MapViewer() {
           </div>
 
           {/* Right Side Panel for Nariño */}
-          <div className="absolute right-8 top-1/2 -translate-y-1/2 w-80 pointer-events-none transition-all duration-300">
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-auto md:left-auto md:right-8 md:top-1/2 md:-translate-y-1/2 md:w-80 pointer-events-none transition-all duration-300 z-30">
             {(activeTab === "subregiones" && hoveredRegion) ? (
               <div className="glass-panel p-6 shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-3">
@@ -183,7 +183,7 @@ export default function MapViewer() {
           </div>
 
           {/* Left Side Panel for Colombia Minimap */}
-          <div className="absolute left-8 top-1/2 -translate-y-1/2 w-72 pointer-events-none transition-all duration-300">
+          <div className="absolute top-20 left-4 right-4 md:top-1/2 md:bottom-auto md:right-auto md:left-8 md:-translate-y-1/2 md:w-72 pointer-events-none transition-all duration-300 z-30">
             {hoveredColombia && (
               <div className="glass-panel p-5 shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-2">

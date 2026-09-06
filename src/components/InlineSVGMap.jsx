@@ -132,25 +132,44 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
       if (!groupByColor && path.getAttribute("data-map-type") === "narino") {
         muniName = path.getAttribute("data-muni-name");
         if (!muniName) {
-          const pathBBox = path.getBoundingClientRect();
-          const px = pathBBox.left + pathBBox.width / 2;
-          const py = pathBBox.top + pathBBox.height / 2;
-          
-          let bestName = "Municipio (ID: " + path.getAttribute("data-region-id") + ")";
-          let bestDist = Infinity;
-          
           const tspans = containerRef.current.querySelectorAll("tspan");
-          tspans.forEach(tspan => {
+          let foundName = null;
+
+          // 1. Exact hit testing: Check if the text's physical center is inside the path
+          for (let tspan of tspans) {
             const tBBox = tspan.getBoundingClientRect();
             const tx = tBBox.left + tBBox.width / 2;
             const ty = tBBox.top + tBBox.height / 2;
-            const dist = Math.sqrt((px - tx)**2 + (py - ty)**2);
-            if (dist < bestDist && dist < 150) { 
-              bestDist = dist;
-              bestName = tspan.textContent.trim();
+            const elements = document.elementsFromPoint(tx, ty);
+            if (elements && elements.includes(path)) {
+              foundName = tspan.textContent.trim();
+              break;
             }
-          });
-          muniName = bestName;
+          }
+
+          if (foundName) {
+            muniName = foundName;
+          } else {
+            // 2. Fallback: find closest text by bounding box center distance
+            const pathBBox = path.getBoundingClientRect();
+            const px = pathBBox.left + pathBBox.width / 2;
+            const py = pathBBox.top + pathBBox.height / 2;
+            
+            let bestName = "Municipio (ID: " + path.getAttribute("data-region-id") + ")";
+            let bestDist = Infinity;
+            
+            tspans.forEach(tspan => {
+              const tBBox = tspan.getBoundingClientRect();
+              const tx = tBBox.left + tBBox.width / 2;
+              const ty = tBBox.top + tBBox.height / 2;
+              const dist = Math.sqrt((px - tx)**2 + (py - ty)**2);
+              if (dist < bestDist && dist < 150) { 
+                bestDist = dist;
+                bestName = tspan.textContent.trim();
+              }
+            });
+            muniName = bestName;
+          }
           path.setAttribute("data-muni-name", muniName);
         }
       }
