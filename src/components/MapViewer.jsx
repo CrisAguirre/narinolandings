@@ -26,10 +26,10 @@ export default function MapViewer() {
   };
 
   // Data for individual municipalities
-  const handleMuniHover = (id) => {
+  const handleMuniHover = (data) => {
     setHoveredMuni({
-      name: "Municipio (ID: " + id + ")",
-      description: "Datos detallados del municipio se cargarán aquí."
+      name: data.name,
+      description: `Explora el municipio de ${data.name}. En futuras versiones, aquí se mostrarán estadísticas, cultura, economía y turismo de esta zona.`
     });
   };
 
