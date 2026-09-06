@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import MapContainer3D from "./MapContainer3D";
-import RegionMap from "./RegionMap";
+import InlineSVGMap from "./InlineSVGMap";
 import GlassPanel from "./GlassPanel";
 import { regionsData } from "../data/regionsData";
+import svg1Url from "../assets/1.svg?url";
+import svg2Url from "../assets/2.svg?url";
 
 export default function MapViewer() {
   const [activeTab, setActiveTab] = useState("regiones");
@@ -36,22 +38,26 @@ export default function MapViewer() {
 
   return (
     <div className="relative w-full h-screen overflow-hidden flex flex-col bg-slate-900">
+      {/* Background blobs for glassmorphism */}
       <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-blue-600/20 blur-[120px] pointer-events-none" />
       <div className="absolute bottom-[-20%] right-[-10%] w-[40%] h-[50%] rounded-full bg-emerald-600/20 blur-[120px] pointer-events-none" />
-      
+
+      {/* Header */}
       <header className="relative z-20 w-full p-6 flex flex-col items-center justify-center gap-6">
         <div className="text-center">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-emerald-400 to-teal-400">
             Nariño Interactivo 3D
           </h1>
           <p className="text-slate-400 mt-2 text-sm md:text-base max-w-lg mx-auto">
-            Explora el departamento de Nariño a través de su división regional y municipal. Haz clic en las zonas para más información.
+            Explora el departamento de Nariño a través de su división regional y municipal. 
+            Haz clic en las zonas para más información.
           </p>
         </div>
 
+        {/* Tab switcher */}
         <div className="flex bg-white/5 backdrop-blur-md border border-white/10 p-1 rounded-full relative">
           <button
-            onClick={() => setActiveTab("regiones")}
+            onClick={() => { setActiveTab("regiones"); setIsPanelOpen(false); }}
             className={getTabClass("regiones")}
           >
             Subregiones
@@ -63,9 +69,9 @@ export default function MapViewer() {
               />
             )}
           </button>
-          
+
           <button
-            onClick={() => setActiveTab("municipios")}
+            onClick={() => { setActiveTab("municipios"); setIsPanelOpen(false); }}
             className={getTabClass("municipios")}
           >
             Municipios
@@ -80,32 +86,34 @@ export default function MapViewer() {
         </div>
       </header>
 
-      <main className="flex-1 relative z-10">
-        {activeTab === "regiones" ? (
+      {/* Map Area */}
+      <main className="flex-1 relative z-10 overflow-hidden">
+        <div style={{ perspective: "1200px" }} className="w-full h-full flex items-center justify-center">
           <MapContainer3D>
-            <RegionMap 
-              onRegionClick={handleRegionClick}
-              onRegionHover={handleRegionHover}
-              onRegionLeave={handleRegionLeave}
-            />
+            {activeTab === "regiones" ? (
+              <InlineSVGMap
+                svgPath={svg1Url}
+                onRegionClick={handleRegionClick}
+                onRegionHover={handleRegionHover}
+                onRegionLeave={handleRegionLeave}
+              />
+            ) : (
+              <InlineSVGMap
+                svgPath={svg2Url}
+                onRegionClick={handleRegionClick}
+                onRegionHover={handleRegionHover}
+                onRegionLeave={handleRegionLeave}
+              />
+            )}
           </MapContainer3D>
-        ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center p-8">
-            <div className="glass-panel p-8 text-center max-w-md">
-              <h2 className="text-xl font-bold text-slate-100 mb-2">Mapa de Municipios</h2>
-              <p className="text-slate-400 text-sm">
-                Estamos a la espera del archivo SVG vectorial correcto para los municipios. 
-                El archivo actual es una imagen plana que no permite interacción 3D por zonas.
-              </p>
-            </div>
-          </div>
-        )}
+        </div>
       </main>
 
-      <GlassPanel 
-        isOpen={isPanelOpen} 
-        data={currentData} 
-        onClose={() => setIsPanelOpen(false)} 
+      {/* Glass Panel */}
+      <GlassPanel
+        isOpen={isPanelOpen}
+        data={currentData}
+        onClose={() => setIsPanelOpen(false)}
       />
     </div>
   );
