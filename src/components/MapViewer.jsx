@@ -96,7 +96,7 @@ export default function MapViewer() {
           <div className="w-full max-w-4xl h-full p-4 relative">
             {activeTab === "subregiones" ? (
               <InlineSVGMap 
-                svgPath="/src/assets/1.svg" 
+                svgPath="/assets/1.svg" 
                 groupByColor={true}
                 onRegionHover={handleRegionHover}
                 onRegionLeave={handleRegionLeave}
@@ -105,7 +105,7 @@ export default function MapViewer() {
               />
             ) : (
               <InlineSVGMap 
-                svgPath="/src/assets/2.svg" 
+                svgPath="/assets/2.svg" 
                 groupByColor={false}
                 onRegionHover={handleMuniHover}
                 onRegionLeave={handleMuniLeave}
