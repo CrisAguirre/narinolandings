@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import InlineSVGMap from "./InlineSVGMap";
 import { getRegionByColor } from "../data/regionsData";
+import { getMunicipioByName } from "../data/municipiosData";
 import EvaluationTab from "./EvaluationTab"; 
 
 export default function MapViewer() {
@@ -27,10 +28,18 @@ export default function MapViewer() {
 
   // Data for individual municipalities
   const handleMuniHover = (data) => {
-    setHoveredMuni({
-      name: data.name,
-      description: `Explora el municipio de ${data.name}. En futuras versiones, aquí se mostrarán estadísticas, cultura, economía y turismo de esta zona.`
-    });
+    const muniInfo = getMunicipioByName(data.name);
+    if (muniInfo) {
+      setHoveredMuni(muniInfo);
+    } else {
+      setHoveredMuni({
+        name: data.name,
+        subregion: "",
+        color: "#64748b",
+        description: `Municipio del departamento de Nariño.`,
+        facts: []
+      });
+    }
   };
 
   const handleMuniLeave = () => {
@@ -141,13 +150,34 @@ export default function MapViewer() {
               </div>
             ) : (activeTab === "municipios" && hoveredMuni) ? (
               <div className="glass-panel p-6 shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: hoveredMuni.color + '33' }}>
+                    <svg className="w-5 h-5" style={{ color: hoveredMuni.color }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                   </div>
-                  <h3 className="text-xl font-bold text-white">{hoveredMuni.name}</h3>
+                  <div>
+                    <h3 className="text-xl font-bold text-white leading-tight">{hoveredMuni.name}</h3>
+                    {hoveredMuni.subregion && (
+                      <span className="text-xs font-medium px-2 py-0.5 rounded-full mt-0.5 inline-block" style={{ backgroundColor: hoveredMuni.color + '25', color: hoveredMuni.color }}>
+                        Subregión {hoveredMuni.subregion}
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <p className="text-sm text-slate-300 leading-relaxed">{hoveredMuni.description}</p>
+                <p className="text-sm text-slate-300 leading-relaxed mb-3 mt-2">{hoveredMuni.description}</p>
+                
+                {hoveredMuni.facts && hoveredMuni.facts.length > 0 && (
+                  <div className="space-y-2">
+                    <h4 className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: hoveredMuni.color }}>Datos Clave</h4>
+                    <ul className="text-sm text-slate-300 space-y-1.5">
+                      {hoveredMuni.facts.map((fact, idx) => (
+                        <li key={idx} className="flex items-start">
+                          <span className="mr-2" style={{ color: hoveredMuni.color }}>•</span>
+                          <span>{fact}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
               </div>
             ) : null}
           </div>
@@ -178,7 +208,7 @@ export default function MapViewer() {
 
       {/* Evaluation Module will go here */}
       {activeTab === "evaluacion" && (
-        <div className="flex-1 overflow-y-auto w-full relative z-10">
+        <div className="flex-1 min-h-0 overflow-y-auto w-full relative z-10">
           <EvaluationTab />
         </div>
       )}
