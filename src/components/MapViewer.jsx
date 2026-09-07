@@ -99,10 +99,10 @@ export default function MapViewer() {
       </div>
 
       {activeTab !== "evaluacion" && (
-        <div className="flex-1 relative flex flex-col md:flex-row items-center justify-center">
+        <div className="flex-1 relative flex flex-col md:flex-row items-center">
           
           {/* Main Map View */}
-          <div className="w-full max-w-4xl h-full p-2 md:p-4 relative">
+          <div className="w-full max-w-4xl h-full p-2 md:p-4 relative md:ml-8">
             {activeTab === "subregiones" ? (
               <InlineSVGMap 
                 svgPath="/assets/1.svg" 
@@ -124,83 +124,86 @@ export default function MapViewer() {
             )}
           </div>
 
-          {/* Right Side Panel for Nariño */}
-          <div className="absolute bottom-4 left-4 right-4 md:bottom-auto md:left-auto md:right-8 md:top-1/2 md:-translate-y-1/2 md:w-80 pointer-events-none transition-all duration-300 z-30">
+          {/* Right Side Panel for Nariño - Wider to accommodate image */}
+          <div className="absolute bottom-4 left-4 right-4 md:bottom-auto md:left-auto md:right-4 md:top-1/2 md:-translate-y-1/2 md:-translate-x-[200px] w-[35%] pointer-events-none transition-all duration-300 z-30">
             {(activeTab === "subregiones" && hoveredRegion) ? (
-              <div className="glass-panel p-6 shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-teal-500/20 flex items-center justify-center text-teal-400">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                  </div>
-                  <h3 className="text-xl font-bold text-white">{hoveredRegion.name}</h3>
+              <div className="glass-panel shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300 rounded-2xl overflow-hidden">
+                {/* Image at top */}
+                <div className="w-full h-56 bg-slate-700 overflow-hidden rounded-t-2xl">
+                  <img 
+                    src={hoveredRegion.image} 
+                    alt={hoveredRegion.name}
+                    className="w-full h-full object-contain"
+                    onError={(e) => { e.target.style.display = 'none'; }}
+                  />
                 </div>
-                <p className="text-sm text-slate-300 leading-relaxed mb-4">{hoveredRegion.description}</p>
                 
-                <div className="space-y-2">
-                  <h4 className="text-xs font-semibold text-teal-400 uppercase tracking-wider mb-2">Características Principales</h4>
-                  <ul className="text-sm text-slate-300 space-y-1.5">
-                    {hoveredRegion.characteristics.map((char, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <span className="text-teal-500 mr-2">•</span>
-                        <span>{char}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            ) : (activeTab === "municipios" && hoveredMuni) ? (
-              <div className="glass-panel p-6 shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: hoveredMuni.color + '33' }}>
-                    <svg className="w-5 h-5" style={{ color: hoveredMuni.color }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-8 h-8 rounded-full bg-teal-500/20 flex items-center justify-center text-teal-400">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 className="text-xl font-bold text-white">{hoveredRegion.name}</h3>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white leading-tight">{hoveredMuni.name}</h3>
-                    {hoveredMuni.subregion && (
-                      <span className="text-xs font-medium px-2 py-0.5 rounded-full mt-0.5 inline-block" style={{ backgroundColor: hoveredMuni.color + '25', color: hoveredMuni.color }}>
-                        Subregión {hoveredMuni.subregion}
-                      </span>
-                    )}
-                  </div>
-                </div>
-                <p className="text-sm text-slate-300 leading-relaxed mb-3 mt-2">{hoveredMuni.description}</p>
-                
-                {hoveredMuni.facts && hoveredMuni.facts.length > 0 && (
+                  <p className="text-sm text-slate-300 leading-relaxed mb-4">{hoveredRegion.description}</p>
+                  
                   <div className="space-y-2">
-                    <h4 className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: hoveredMuni.color }}>Datos Clave</h4>
+                    <h4 className="text-xs font-semibold text-teal-400 uppercase tracking-wider mb-2">Características Principales</h4>
                     <ul className="text-sm text-slate-300 space-y-1.5">
-                      {hoveredMuni.facts.map((fact, idx) => (
+                      {hoveredRegion.characteristics.map((char, idx) => (
                         <li key={idx} className="flex items-start">
-                          <span className="mr-2" style={{ color: hoveredMuni.color }}>•</span>
-                          <span>{fact}</span>
+                          <span className="text-teal-500 mr-2">•</span>
+                          <span>{char}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
-                )}
+                </div>
+              </div>
+            ) : (activeTab === "municipios" && hoveredMuni) ? (
+              <div className="glass-panel shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300 rounded-2xl overflow-hidden">
+{/* Image at top */}
+                 <div className="w-full h-56 bg-slate-700 overflow-hidden rounded-t-2xl">
+                   <img 
+                     src={hoveredMuni.image} 
+                     alt={hoveredMuni.name}
+                     className="w-full h-full object-contain"
+                     onError={(e) => { e.target.style.display = 'none'; }}
+                   />
+                 </div>
+                
+                <div className="p-6">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: hoveredMuni.color + '33' }}>
+                      <svg className="w-5 h-5" style={{ color: hoveredMuni.color }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-white leading-tight">{hoveredMuni.name}</h3>
+                      {hoveredMuni.subregion && (
+                        <span className="text-xs font-medium px-2 py-0.5 rounded-full mt-0.5 inline-block" style={{ backgroundColor: hoveredMuni.color + '25', color: hoveredMuni.color }}>
+                          Subregión {hoveredMuni.subregion}
+                        </span>
+                      )}
+                    </div>
+                  </div>
+                  <p className="text-sm text-slate-300 leading-relaxed mb-3 mt-2">{hoveredMuni.description}</p>
+                  
+                  {hoveredMuni.facts && hoveredMuni.facts.length > 0 && (
+                    <div className="space-y-2">
+                      <h4 className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: hoveredMuni.color }}>Datos Clave</h4>
+                      <ul className="text-sm text-slate-300 space-y-1.5">
+                        {hoveredMuni.facts.map((fact, idx) => (
+                          <li key={idx} className="flex items-start">
+                            <span className="mr-2" style={{ color: hoveredMuni.color }}>•</span>
+                            <span>{fact}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </div>
             ) : null}
-          </div>
-
-          {/* Left Side Panel for Colombia Minimap */}
-          <div className="absolute top-20 left-4 right-4 md:top-1/2 md:bottom-auto md:right-auto md:left-8 md:-translate-y-1/2 md:w-72 pointer-events-none transition-all duration-300 z-30">
-            {hoveredColombia && (
-              <div className="glass-panel p-5 shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300">
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                  </div>
-                  <h3 className="text-lg font-bold text-white">
-                    {isNarinoColombia ? "Nariño (Colombia)" : "Departamento de Colombia"}
-                  </h3>
-                </div>
-                <p className="text-sm text-slate-300 leading-relaxed">
-                  {isNarinoColombia 
-                    ? "El departamento de Nariño se ubica en el suroccidente de Colombia, limitando con Ecuador y el Océano Pacífico."
-                    : "Colombia se divide en 32 departamentos y un Distrito Capital. Explora su diversidad geográfica y cultural."}
-                </p>
-              </div>
-            )}
           </div>
 
         </div>

@@ -2,6 +2,7 @@ export const regionsData = {
   // Sanquianga: El Charco, La Tola, Mosquera, Olaya Herrera, Santa Bárbara
   "#aade87": {
     name: "Subregión Sanquianga",
+    image: "https://picsum.photos/seed/sanquianga/400/200",
     description: "Ubicada en la llanura pacífica, caracterizada por sus manglares y ecosistemas de costa. Es una región rica en biodiversidad y recursos hídricos.",
     characteristics: [
       "Extensos bosques de manglar y ecosistemas estuarinos.",
@@ -13,6 +14,7 @@ export const regionsData = {
   // Pacífico Sur: Tumaco, Francisco Pizarro
   "#fffdc0": {
     name: "Subregión Pacífico Sur",
+    image: "https://picsum.photos/seed/pacificosur/400/200",
     description: "Zona costera de gran importancia portuaria y turística. Principal centro urbano y económico del pacífico nariñense.",
     characteristics: [
       "Alberga el puerto marítimo de Tumaco, vital para el comercio.",
@@ -24,6 +26,7 @@ export const regionsData = {
   // Telembí: Barbacoas, Magüí Payán, Roberto Payán
   "#ebcef2": {
     name: "Subregión Telembí",
+    image: "https://picsum.photos/seed/telembi/400/200",
     description: "Región selvática y lluviosa, cruzada por el río Telembí. Históricamente conocida por su riqueza minera.",
     characteristics: [
       "Alta pluviosidad y densa selva húmeda tropical.",
@@ -35,6 +38,7 @@ export const regionsData = {
   // Piedemonte Costero: Mallama, Ricaurte
   "#e8f2ad": {
     name: "Subregión Piedemonte Costero",
+    image: "https://picsum.photos/seed/piedemonte/400/200",
     description: "Zona de transición entre los Andes y la llanura pacífica, caracterizada por su escarpada topografía y alta humedad.",
     characteristics: [
       "Topografía agreste con profundos cañones.",
@@ -46,6 +50,7 @@ export const regionsData = {
   // Obando: Aldana, Contadero, Córdoba, Cuaspud, Cumbal, Funes, Guachucal, Gualmatán, Iles, Ipiales, Potosí, Puerres, Pupiales
   "#ffcccc": {
     name: "Subregión Obando",
+    image: "https://picsum.photos/seed/obando/400/200",
     description: "Región andina fronteriza con Ecuador. Destaca por su dinamismo comercial y rica tradición indígena.",
     characteristics: [
       "Alta actividad comercial fronteriza (Ipiales).",
@@ -57,6 +62,7 @@ export const regionsData = {
   // Sabana: Guaitarilla, Imués, Ospina, Sapuyes, Túquerres
   "#bebad7": {
     name: "Subregión Sabana",
+    image: "https://picsum.photos/seed/sabana/400/200",
     description: "Altiplano andino con tierras fértiles, considerado una de las principales despensas agrícolas de Nariño.",
     characteristics: [
       "Producción intensiva de papa, hortalizas y lácteos.",
@@ -68,6 +74,7 @@ export const regionsData = {
   // Abades: Providencia, Samaniego, Santacruz
   "#ffd000": {
     name: "Subregión Abades",
+    image: "https://picsum.photos/seed/abades/400/200",
     description: "Región andina con relieve montañoso que desciende hacia la costa. Tierra de músicos y artesanos.",
     characteristics: [
       "Samaniego es conocido como ciudad paisaje y musical.",
@@ -79,6 +86,7 @@ export const regionsData = {
   // Occidente: Ancuya, Consacá, Linares, Sandoná
   "#ffadad": {
     name: "Subregión Occidente",
+    image: "https://picsum.photos/seed/occidente/400/200",
     description: "Región andina con clima templado muy agradable, famosa por sus artesanías en paja toquilla.",
     characteristics: [
       "Artesanías reconocidas internacionalmente (sombreros en Sandoná).",
@@ -90,6 +98,7 @@ export const regionsData = {
   // Cordillera: Cumbitara, El Rosario, Leiva, Policarpa, Taminango
   "#f4b97f": {
     name: "Subregión Cordillera",
+    image: "https://picsum.photos/seed/cordillera/400/200",
     description: "Ubicada al noroccidente, caracterizada por la cuenca del río Patía y un clima más cálido y seco en las zonas bajas.",
     characteristics: [
       "Economía basada en cultivos de clima cálido como el maní y frutales.",
@@ -101,6 +110,7 @@ export const regionsData = {
   // Centro: Pasto, Chachagüí, La Florida, Nariño, Tangua, Yacuanquer
   "#75c5f0": {
     name: "Subregión Centro",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Parque_Narino_Pasto.JPG",
     description: "Corazón político y administrativo del departamento, dominado por el volcán Galeras.",
     characteristics: [
       "Pasto, ciudad capital y centro administrativo, comercial y universitario.",
@@ -112,6 +122,7 @@ export const regionsData = {
   // Juanambú: Arboleda, Buesaco, La Unión, San Lorenzo, San Pedro de Cartago
   "#b8da6b": {
     name: "Subregión Juanambú",
+    image: "https://picsum.photos/seed/juanambu/400/200",
     description: "Región cafetera por excelencia, atravesada por el histórico cañón del río Juanambú.",
     characteristics: [
       "La Unión es conocida como la capital cafetera de Nariño.",
@@ -123,6 +134,7 @@ export const regionsData = {
   // Río Mayo: Albán, Belén, Colón, El Tablón de Gómez, La Cruz, San Bernardo, San Pablo
   "#ffdea9": {
     name: "Subregión Río Mayo",
+    image: "https://picsum.photos/seed/riomayo/400/200",
     description: "Región nororiental montañosa, con abundantes fuentes de agua y paisajes cordilleranos.",
     characteristics: [
       "Suelos fértiles para el café, frutales y ganadería.",
@@ -134,6 +146,7 @@ export const regionsData = {
   // Guambuyaco: El Peñol, El Tambo, La Llanada, Los Andes Sotomayor
   "#fffc9a": {
     name: "Subregión Guambuyaco",
+    image: "https://picsum.photos/seed/guambuyaco/400/200",
     description: "Región de montañas y valles templados, con una combinación de economía agrícola y minera.",
     characteristics: [
       "Importante producción minera (oro en La Llanada y Los Andes).",
