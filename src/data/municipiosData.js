@@ -380,7 +380,7 @@ const municipiosData = {
     name: "Sandoná",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg",
     description: "Sandoná es la capital artesanal de Nariño, mundialmente famosa por sus sombreros de iraca (paja toquilla). Ubicado a 1.750 m.s.n.m. en la cordillera occidental, es el principal centro de producción de sombreros 'vueltiaos' y 'aguadeños' de Colombia. Su economía combina la artesanía, el café de alta calidad y la panela. Las Fiestas del Sombrero son el evento cultural emblemático del municipio.",
     facts: [
       "Capital artesanal de Nariño: sombreros de paja toquilla reconocidos mundialmente",
@@ -410,7 +410,7 @@ const municipiosData = {
     name: "Consacá",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Colombia_-_Nari%C3%B1o_-_Consac%C3%A1.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Consacá es un municipio histórico al pie del volcán Galeras, a 1.900 m.s.n.m., escenario de la célebre Batalla de Bomboná (1822) que selló la independencia de Colombia. Sus aguas termales y paisajes volcanicos lo convierten en destino turístico. La economía combina la agricultura de café y frutales con el turismo histórico y termal, en un territorio de great valor cultural y natural.",
     facts: [
       "Batalla de Bomboná (1822): sitio histórico de la independencia",
@@ -472,7 +472,7 @@ const municipiosData = {
     name: "Santacruz (Guachavés)",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/GUACHAVES_PANORAMICA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/GUACHAVES_PANORAMICA.jpg",
     description: "Santacruz, también conocido como Guachavés, es un municipio del piedemonte occidental de Nariño a 1.500 m.s.n.m. Es territorio del pueblo indígena Awá, con importantes resguardos indígenas de gran extensión. Su economía se basa en la agricultura de subsistencia, la minería artesanal y la explotación de recursos forestales, manteniendo vivas tradiciones ancestrales Awá.",
     facts: [
       "Territorio del pueblo indígena Awá",
