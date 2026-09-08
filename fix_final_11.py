@@ -59,7 +59,7 @@ for muni_name, new_url in image_map.items():
         replaced += 1
         print(f"OK: {muni_name} -> {new_url.split('/')[-1][:50]}")
     else:
-        print(f"❌ Could not find {muni_name}")
+        print(f"FAILED: Could not find {muni_name}")
 
 with open(file_path, 'w', encoding='utf-8') as f:
     f.write(content)
