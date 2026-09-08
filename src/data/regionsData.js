@@ -86,7 +86,7 @@ export const regionsData = {
   // Occidente: Ancuya, Consacá, Linares, Sandoná
   "#ffadad": {
     name: "Subregión Occidente",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg",
     description: "Región andina con clima templado muy agradable, famosa por sus artesanías en paja toquilla.",
     characteristics: [
       "Artesanías reconocidas internacionalmente (sombreros en Sandoná).",
@@ -110,7 +110,7 @@ export const regionsData = {
   // Centro: Pasto, Chachagüí, La Florida, Nariño, Tangua, Yacuanquer
   "#75c5f0": {
     name: "Subregión Centro",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Parque_Narino_Pasto.JPG",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parque_Narino_Pasto.JPG",
     description: "Corazón político y administrativo del departamento, dominado por el volcán Galeras.",
     characteristics: [
       "Pasto, ciudad capital y centro administrativo, comercial y universitario.",
@@ -146,7 +146,7 @@ export const regionsData = {
   // Guambuyaco: El Peñol, El Tambo, La Llanada, Los Andes Sotomayor
   "#fffc9a": {
     name: "Subregión Guambuyaco",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/GUACHAVES_PANORAMICA.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/GUACHAVES_PANORAMICA.jpg",
     description: "Región de montañas y valles templados, con una combinación de economía agrícola y minera.",
     characteristics: [
       "Importante producción minera (oro en La Llanada y Los Andes).",
