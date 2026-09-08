@@ -581,7 +581,7 @@ const municipiosData = {
     name: "Buesaco",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
+    image: "https://turismo.narino.gov.co/wp-content/uploads/2025/04/templo_buesaco-1024x683.jpg",
     description: "Buesaco es un municipio cafetero del cañón del Juanambú, situado a 1.700 m.s.n.m. con producción de café especial de alta calidad. Su territorio incluye el cañón del río Juanambú con paisajes de gran valor ecológico. El clima variado desde frío hasta templado permite una agricultura diversificada de café, frutales y hortalizas.",
     facts: [
       "Café especial de alta calidad y reconocimiento",
@@ -765,7 +765,7 @@ const municipiosData = {
     name: "El Rosario",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cordillera_Occidental_Colombia.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdQloC3HChguGwtNLWLdR3uwi3Addr6UpQ5VanPoDOXC9W3KxXzHaUpqw&s=10",
     description: "El Rosario es municipio de la zona seca del Patía a 1.300 m.s.n.m., con producción de cacao y frutales. Su clima cálido y semiárido define una economía agrícola adaptada a las condiciones del cañón del Patía, con comunidades campesinas tradicionales.",
     facts: [
       "Zona semiárida del cañón del Patía",
@@ -812,7 +812,7 @@ const municipiosData = {
     name: "El Charco",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parquecol%C3%B3n.jpg",
+    image: "https://cloudfront-us-east-1.images.arcpublishing.com/elespectador/DLJJWKW3ENBJNNBG5HP3BT65TM.jpg",
     description: "El Charco es municipio costero de la región Sanquianga en la costa pacífica nariñense, a nivel del mar. Su economía se basa en la pesca artesanal y la recolección de piangua, además de la explotación forestal. Comunidades afrodescendientes con rica cultura habitan este territorio de manglares y biodiversidad costera.",
     facts: [
       "Ubicado en la costa pacífica nariñense",
@@ -827,7 +827,7 @@ const municipiosData = {
     name: "La Tola",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cordillera_Occidental_Colombia.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu5sSYjsCPFpJuqTvL35C9oxpdEDAmGPcDSvNb1ssdqEifN0SAyNKte6tj&s=10",
     description: "La Tola es municipio costero del Pacífico, puerta de entrada al Parque Nacional Natural Sanquianga. Sus extensos manglares y bosques de costa albergan una biodiversidad excepcional. La economía se basa en la pesca artesanal, la recolección de piangua y la madera, con comunidades afrodescendientes de fuerte identidad cultural.",
     facts: [
       "Acceso al Parque Nacional Natural Sanquianga",
@@ -857,7 +857,7 @@ const municipiosData = {
     name: "Olaya Herrera",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Crep%C3%BAsculo_en_el_parque_Natural_Sanquianga.jpg",
+    image: "https://cdn.municipios.com.co/fotos/786-2017-09-15-19-01-957-L.jpg",
     description: "Olaya Herrera, también conocido como Bocas de Satinga, es municipio de la costa pacífica a nivel del mar. La desembocadura del río Satinga define su geografía costera con manglares y ecosistemas acuáticos. La economía combina la pesca, la recolección de concha y la agricultura de subsistencia en un territorio de selva húmeda tropical.",
     facts: [
       "También llamado Bocas de Satinga",
@@ -872,7 +872,7 @@ const municipiosData = {
     name: "Santa Bárbara (Iscuandé)",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Crep%C3%BAsculo_en_el_parque_Natural_Sanquianga.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6oKave4zsuuvnI16s8Sq0gNExnvjD3mHfgy7k0Tg9n4IrCBRWRErWKqA&s=10",
     description: "Santa Bárbara, también conocido como Iscuandé, es municipio costero con tradición pesquera y herencia cultural afrocolombiana. Su economía se basa en la pesca artesanal como principal actividad, con manglares y ecosistemas costeros de gran valor ecológico en la llanura pacífica.",
     facts: [
       "También conocido como Iscuandé",
@@ -951,7 +951,7 @@ const municipiosData = {
     name: "Roberto Payán",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parquecol%C3%B3n.jpg",
+    image: "https://radionacional-v3.s3.amazonaws.com/s3fs-public/node/article/field_image/roberto%20payan.jpg",
     description: "Roberto Payán, también conocido como San José, es municipio selvático de la cuenca del Telembí con alta biodiversidad de selva húmeda tropical. Su economía combina la minería artesanal, la agricultura de subsistencia y la explotación forestal en un territorio de gran valor ecológico.",
     facts: [
       "También conocido como San José",
@@ -1000,10 +1000,10 @@ const municipiosData = {
 const normalizeKey = (name) => {
   if (!name) return null;
   const trimmed = name.trim();
-  
+
   // Direct match
   if (municipiosData[trimmed]) return trimmed;
-  
+
   // Try case-insensitive match
   const keys = Object.keys(municipiosData);
   for (const key of keys) {
@@ -1013,7 +1013,7 @@ const normalizeKey = (name) => {
     // Check partial match (e.g. "El Tablón" matches "El Tablón de Gómez")
     if (key.toLowerCase().startsWith(trimmed.toLowerCase()) || trimmed.toLowerCase().startsWith(key.toLowerCase())) return key;
   }
-  
+
   return null;
 };
 
