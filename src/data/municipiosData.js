@@ -23,7 +23,7 @@ const municipiosData = {
     name: "Chachagüí",
     subregion: "Centro",
     color: "#4f9de8",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Chachag%C3%BC%C3%AD%2C_villa_campestre.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfHgPgMBxrkZpUVHVgQoDcx16uQXtS8HKQtOWVEqJfmPrtKuGIPUb6CfD3&s=10",
     description: "Chachagüí es un municipio campestre del Valle de Atríz, situado a 1.950 m.s.n.m. y sede del Aeropuerto Internacional Antonio Nariño, principal puerta aérea del departamento. Su nombre proviene del quechua 'cha' (bueno) y 'bí' (agua), significando 'Buena Agua'. Fue fundado como corregimiento en 1586 sobre un antiguo asentamiento Quillasinga. Es conocido por su clima templado (18-22°C), sus festividades religiosas y su producción agrícola diversificada.",
     facts: [
       "Sede del Aeropuerto Antonio Nariño, terminal aérea principal de Nariño",
@@ -87,7 +87,7 @@ const municipiosData = {
     name: "Yacuanquer",
     subregion: "Centro",
     color: "#4f9de8",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Dibujo_de_las_monta%C3%B1as_de_Yacuanquer.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG4xNeYbtWmKNX4aVQE7Op1B6Mf14MaZBnC5_4xLxOpDgEa5NJgb-9_3Q&s=10",
     description: "Yacuanquer, a 2.670 m.s.n.m., es uno de los municipios más antiguos de Nariño, fundado como Villaviciosa de Pasto el 10 de octubre de 1539 por Lorenzo de Aldana. Su nombre proviene del quechua 'Llano de los Ídolos' o 'Tumbas de los Dioses', reflejando su profundo origen indígena. Rodeado por el volcán Galeras, es conocido por la tradicional 'Danza de la Calavera' navideña desde 1942, la iglesia Santa María Magdalena de estilo neorrománico (1904-1945) y el parque con estatua de Pedro León Torres.",
     facts: [
       "Uno de los municipios más antiguos de Nariño (fundado 1539)",
@@ -120,7 +120,7 @@ const municipiosData = {
     name: "Aldana",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdCW3nJXuk8KsfPJF-y668gJq2r6vpcftvc0ROmyczIsAKJGk-TlQ47Emb&s=10",
     description: "Aldana es un municipio del altiplano nariñense a 2.820 m.s.n.m., con fuerte herencia indígena Pasto y tradiciones ancestrales preservadas por sus comunidades originarias. Es conocido por su producción agrícola de clima frío y su ubicación estratégica cerca de la frontera con Ecuador. El municipio mantiene prácticas culturales de la cultura Pasto, incluyendo la música, danzas y festividades religiosas tradicionales.",
     facts: [
       "Resguardo indígena de los Pastos con comunidades activas",
@@ -151,7 +151,7 @@ const municipiosData = {
     name: "Córdoba",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyuIXBDb34ipjW6t5-E5QuZyxlfn_iydcVtiS5LzUk_nrwPVH8HD9rFl0&s=10",
     description: "Córdoba es un municipio del altiplano nariñense con paisajes de páramo y laguna, situado a 2.950 m.s.n.m. En su territorio se encuentra la Laguna de La Bolsa, atractivo natural de aguas frías rodeado de frailejones. La economía se basa en la agroganadería de clima frío con producción de papa, trigo y leche. El municipio mantiene comunidades indígenas Pasto con sus tradiciones culturales y lengua.",
     facts: [
       "Laguna de La Bolsa: atractivo natural de páramo",
@@ -181,7 +181,7 @@ const municipiosData = {
     name: "Cumbal",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
+    image: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/19/f4/1f/17/cumbal-es-un-municipio.jpg?w=1200&h=-1&s=1",
     description: "Cumbal es un municipio dominado por el imponente volcán Cumbal (4.764 m), el segundo volcán más alto de Colombia, situado a 3.450 m.s.n.m. En su territorio se encuentran las sagradas lagunas de La Bolsa y Cumbal, sitios de peregrinación indígena. Es territorio ancestral del pueblo Pasto con fuerte identidad cultural. Su economía combina la agricultura de papa y cereales con el turismo volcánico y religioso.",
     facts: [
       "Volcán Cumbal (4.764 m): segundo volcán más alto de Colombia",
@@ -211,7 +211,7 @@ const municipiosData = {
     name: "Guachucal",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parque_Nari%C3%B1o_Pasto.JPG",
+    image: "https://www.semana.com/resizer/v2/WGZUHW7UEBHFJJGGPDNYZDW6HM.jpg?smart=true&auth=beea24ccc77ea9a052d0ae562ac44dab8b5686872b6fdcffe3eacbad22db859f&width=1280&height=720",
     description: "Guachucal es el principal centro lechero de Nariño, situado a 2.880 m.s.n.m. en el altiplano de Túquerres-Ipiales. Es reconocido por su industria láctea que abastece gran parte del departamento, produciendo quesos y leche de alta calidad. El municipio tiene fuerte presencia del resguardo indígena Pasto y mantiene tradiciones culturales ancestrales. Su economía se complementa con la agricultura de papa y cebada.",
     facts: [
       "Principal zona lechera del departamento de Nariño",
@@ -271,7 +271,7 @@ const municipiosData = {
     name: "Puerres",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parquepuerres.jpg",
+    image: "https://terraniaturismo.com.co/wp-content/uploads/2023/11/DSC_0634-scaled.jpg",
     description: "Puerres es un municipio agrícola ubicado entre Pasto e Ipiales en el Valle del Guáitara, a 2.400 m.s.n.m. Con valle fértil regado por el río Guáitara, es productor de papa, cebada y frutales. El municipio combina la agricultura de clima templado-frío con la ganadería, en un territorio de paisajes andinos y comunidades campesinas tradicionales.",
     facts: [
       "Valle del río Guáitara con tierras fértiles",
@@ -286,7 +286,7 @@ const municipiosData = {
     name: "Pupiales",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/MunsNarino_Pupiales.png",
+    image: "https://blog.redbus.co/wp-content/uploads/2019/07/foto-2-3.jpg",
     description: "Pupiales es un municipio del altiplano de Obando a 2.780 m.s.n.m., reconocido como centro agrícola de la subregión. Sus principales productos son la papa, los lácteos y las hortalizas. Las fiestas patronales de Pupiales son eventos culturales de gran tradición en la región, con procesiones, danzas y actividades típicas que reflejan la cultura altiplánica nariñense.",
     facts: [
       "Centro agrícola del altiplano de Obando",
@@ -348,7 +348,7 @@ const municipiosData = {
     name: "Ospina",
     subregion: "Sabana",
     color: "#9b8ec7",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Volcan_Azufral.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcSFQpnLdDB99leo4hbPiXGrkMAgoZftoHqXkhGpKjC6LWNRhIR5vhQBQ&s=10",
     description: "Ospina es un pequeño municipio del altiplano nariñense a 2.700 m.s.n.m., con vocación agropecuaria de clima frío. Su economía se basa en la agricultura de papa, cebada y trigo, complementada con la ganadería lechera. Ospina forma parte de la subregión Sabana y mantiene tradiciones campesinas ancestrales con un fuerte sentido de identidad regional.",
     facts: [
       "Altitud: 2.700 m.s.n.m., clima frío",
@@ -363,7 +363,7 @@ const municipiosData = {
     name: "Sapuyes",
     subregion: "Sabana",
     color: "#9b8ec7",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Volcan_Azufral.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwz_vozESKkP0_j532s0ccu06soyn3DCA70PSicPnnxELK2nqnwNLVijw&s=10",
     description: "Sapuyes es un municipio del altiplano nariñense a 2.800 m.s.n.m., situado en la meseta de Túquerres. Tierra fría productora de papa y leche, su economía se basa en la agricultura de clima frío y la ganadería lechera. Sus paisajes de páramo y montaña albergan ecosistemas de alta montaña con comunidades campesinas e indígenas.",
     facts: [
       "Altitud: 2.800 m.s.n.m., clima frío",
@@ -395,7 +395,7 @@ const municipiosData = {
     name: "Ancuyá",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqI4hlBpUr3mBROCYZl5i0yUkh-fzAEdxN8t89VYOQDqW_Z7Ro-TvMf2uw&s=10",
     description: "Ancuyá es un municipio de clima templado a cálido en la cordillera occidental de Nariño, situado a 1.800 m.s.n.m. Es productor de café de origen y caña de azúcar, con paisajes de laderas y cañones de gran belleza natural. La tradición campesina y artesanal es parte fundamental de la identidad de este municipio de la subregión Occidente.",
     facts: [
       "Altitud: 1.800 m.s.n.m., clima templado-cálido",
@@ -442,7 +442,7 @@ const municipiosData = {
     name: "Samaniego",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/GUACHAVES_PANORAMICA.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-wrsDDoQw9fe5pJK8lN2hU6pIAKs3B8tWqYMTGvBOb8vMgtTHBf3hCk0&s=10",
     description: "Samaniego, conocida como 'Ciudad Paisaje y Musical', es un importante centro cultural del suroccidente nariñense, situado a 1.600 m.s.n.m. en la cordillera occidental. Es reconocida por sus bandas musicales y compositores que han dado fama al municipio a nivel nacional. Su economía combina la producción de café, caña panelera y frutales, en un relieve montañoso con vistas panorámicas espectaculares.",
     facts: [
       "'Ciudad Paisaje y Musical' de Colombia",
@@ -489,7 +489,7 @@ const municipiosData = {
     name: "El Peñol",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Funesnari%C3%B1o.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/El_Tambo_Colombia_.jpg/960px-El_Tambo_Colombia_.jpg.webp",
     description: "El Peñol es un municipio de montaña en la subregión Guambuyaco, situado a 1.700 m.s.n.m. en la cordillera occidental. Su economía combina la agricultura de café y caña panelera con la minería artesanal de oro en pequeña escala. Los paisajes montañosos de la cordillera y las comunidades campesinas definen la identidad de este municipio nariñense.",
     facts: [
       "Altitud: 1.700 m.s.n.m., cordillera occidental",
@@ -504,7 +504,7 @@ const municipiosData = {
     name: "El Tambo",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/MunsNarino_Samaniego.png",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/cd/El_Tambo_Colombia_.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
     description: "El Tambo es un municipio de clima templado a cálido en la subregión Guambuyaco, situado a 1.500 m.s.n.m. Es punto de tránsito hacia la costa pacífica nariñense. Su economía se basa en la producción de café, caña panelera y frutales, con una geografía que varía de montañosa a tropical baja.",
     facts: [
       "Altitud: 1.500 m.s.n.m., clima templado-cálido",
@@ -519,7 +519,7 @@ const municipiosData = {
     name: "La Llanada",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
+    image: "https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/rnal_16_9_1024/public/senalradio/articulo-noticia/galeriaimagen/llanada_1.jpg.webp?itok=0YMNrSnF",
     description: "La Llanada es reconocido como el principal centro minero aurífero del departamento de Nariño, con una tradición minera que data de la época colonial. Situado a 1.400 m.s.n.m., su economía se basa en la extracción artesanal de oro, complementada con agricultura de café y caña. Es un municipio de gran importancia económica por su producción minera.",
     facts: [
       "Capital minera de Nariño: extracción artesanal de oro",
@@ -534,7 +534,7 @@ const municipiosData = {
     name: "Los Andes (Sotomayor)",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
+    image: "https://cloudfront-us-east-1.images.arcpublishing.com/prisaradioco/WXZJIPMHSJO6NJCWPIVGS4ZV7M.jpg",
     description: "Los Andes, también conocido como Sotomayor, es municipio de economía mixta agrícola-minera en la subregión Guambuyaco, a 1.500 m.s.n.m. en el cañón del Guáitara. Combina la producción de café con la minería artesanal de oro, en un territorio montañoso de gran valor ecológico y cultural.",
     facts: [
       "Históricamente conocido como Sotomayor",
@@ -735,7 +735,7 @@ const municipiosData = {
     name: "Policarpa",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cordillera_Occidental_Colombia.jpg",
+    image: "https://www.colombiaturismoweb.com/DEPARTAMENTOS/NARINO/MUNICIPIOS/POLICARPA/imagenes/poli.jpg",
     description: "Policarpa es un municipio del cañón del río Patía a 1.200 m.s.n.m., nombrado en honor a la heroína independentista Policarpa Salavarrieta 'La Pola'. Con clima cálido, su economía se basa en la producción de cacao, maní y frutales tropicales. El cañón del Patía ofrece paisajes de gran valor turístico y ecológico.",
     facts: [
       "Nombrado en honor a Policarpa Salavarrieta 'La Pola'",
@@ -750,7 +750,7 @@ const municipiosData = {
     name: "Cumbitara",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cordillera_Occidental_Colombia.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ71RY3cFFBNu5D0fcTycYH37Wp2jICndSBLMCXoNVVj9LCDObQnhGMHvSt&s=10",
     description: "Cumbitara es municipio de clima cálido en el cañón del Patía a 1.100 m.s.n.m., con vocación agrícola. Su economía combina la producción de maní, cacao y frutales tropicales con la minería artesanal de oro. Los paisajes del cañón del Patía configuran un territorio de gran diversidad ecológica.",
     facts: [
       "Valle del río Patía con climas cálidos",
@@ -936,7 +936,7 @@ const municipiosData = {
     name: "Magüí Payán",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%ADo_Telemb%C3%AD_-_Barbacoas,_noviembre_de_2024.jpg",
+    image: "https://turismo.narino.gov.co/wp-content/uploads/2025/09/MAGUI-GOBERNACON.jpg",
     description: "Magüí Payán es municipio selvático de la cuenca del Telembí, con minería artesanal de oro y agricultura de subsistencia. Sus paisajes de selva húmeda tropical del Pacífico albergan alta biodiversidad. Comunidades afrodescendientes mantienen tradiciones culturales ancestrales en este territorio de gran valor ecológico.",
     facts: [
       "Selva húmeda del Pacífico nariñense",
@@ -968,7 +968,7 @@ const municipiosData = {
     name: "Mallama (Piedrancha)",
     subregion: "Piedemonte Costero",
     color: "#b8d86a",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%ADo_Telemb%C3%AD_-_Barbacoas,_noviembre_de_2024.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7o1amJxYbuqVOnyvs6aH-RKyCEefVIK9aOdxZHSR-aybzmCCOH3MOJ4o&s=10",
     description: "Mallama, también conocido como Piedrancha, es municipio de transición andina-costera y territorio del pueblo indígena Awá. Situado entre los Andes y el Pacífico, alberga alta biodiversidad y bosques de niebla de gran valor ecológico. Su economía combina la agricultura de subsistencia con la minería artesanal.",
     facts: [
       "También conocido como Piedrancha",
@@ -983,7 +983,7 @@ const municipiosData = {
     name: "Ricaurte",
     subregion: "Piedemonte Costero",
     color: "#b8d86a",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Reserva_Natural_La_Planada.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2zpRJHMy2kR65ssD3yyaQiYXHQ22C4hOwxQijgGiU09hX406dBtI-Rxxf&s=10",
     description: "Ricaurte es municipio del piedemonte costero que alberga la Reserva Natural La Planada, uno de los lugares con mayor biodiversidad de aves de Colombia. De gran extensión territorial, sus bosques de niebla y montañas albergan comunidades Awá y una fauna y flora de extraordinaria riqueza.",
     facts: [
       "Reserva Natural La Planada: biodiversidad de aves",
