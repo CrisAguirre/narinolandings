@@ -442,7 +442,7 @@ const municipiosData = {
     name: "Samaniego",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/GUACHAVES_PANORAMICA.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/GUACHAVES_PANORAMICA.jpg",
     description: "Samaniego, conocida como 'Ciudad Paisaje y Musical', es un importante centro cultural del suroccidente nariñense, situado a 1.600 m.s.n.m. en la cordillera occidental. Es reconocida por sus bandas musicales y compositores que han dado fama al municipio a nivel nacional. Su economía combina la producción de café, caña panelera y frutales, en un relieve montañoso con vistas panorámicas espectaculares.",
     facts: [
       "'Ciudad Paisaje y Musical' de Colombia",
@@ -457,7 +457,7 @@ const municipiosData = {
     name: "Providencia",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/93/Dibujo_de_las_monta%C3%B1as_de_Yacuanquer.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Dibujo_de_las_monta%C3%B1as_de_Yacuanquer.jpg",
     description: "Providencia es un municipio de montaña en la subregión Abades, situado a 1.800 m.s.n.m. en la cordillera occidental. Su economía combina la minería artesanal de oro con la agricultura de café y caña panelera. Los terrenos quebrados de la cordillera occidental configuran un paisaje de gran belleza natural y挑战 técnico para la agricultura.",
     facts: [
       "Altitud: 1.800 m.s.n.m., cordillera occidental",
@@ -489,7 +489,7 @@ const municipiosData = {
     name: "El Peñol",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Funesnari%C3%B1o.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Funesnari%C3%B1o.jpg",
     description: "El Peñol es un municipio de montaña en la subregión Guambuyaco, situado a 1.700 m.s.n.m. en la cordillera occidental. Su economía combina la agricultura de café y caña panelera con la minería artesanal de oro en pequeña escala. Los paisajes montañosos de la cordillera y las comunidades campesinas definen la identidad de este municipio nariñense.",
     facts: [
       "Altitud: 1.700 m.s.n.m., cordillera occidental",
@@ -673,7 +673,7 @@ const municipiosData = {
     name: "Colón (Génova)",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d1/Nari%C3%B1o_iglesia.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Nari%C3%B1o_iglesia.jpg",
     description: "Colón, también conocido como Génova, es municipio de la cuenca del río Mayo a 1.300 m.s.n.m. con tradición agrícola. Su economía combina la producción de café y frutales con la ganadería, en un territorio de la vertiente oriental nariñense con clima templado-cálido.",
     facts: [
       "También conocido como Génova",
@@ -688,7 +688,7 @@ const municipiosData = {
     name: "El Tablón de Gómez",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Parque_tangua_a_noite_-_panoramio.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parque_tangua_a_noite_-_panoramio.jpg",
     description: "El Tablón de Gómez es un municipio con importante zona arqueológica y vestigios precolombinos en su territorio, situado a 1.800 m.s.n.m. Cerca del Parque Nacional Natural Doña Juana - Cascabel, combina la producción de café de alta montaña con el turismo cultural y ecológico. Los petroglifos y vestigios indígenas testimonian una ocupación ancestral.",
     facts: [
       "Zona arqueológica con petroglifos y vestigios indígenas",
@@ -780,7 +780,7 @@ const municipiosData = {
     name: "Leiva",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/87/Leiva_%28Nari%C3%B1o%29.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Leiva_(Nari%C3%B1o).jpg",
     description: "Leiva es municipio del cañón del Patía a 1.200 m.s.n.m. con economía basada en agricultura de clima cálido. Sus cultivos de maní, cacao y frutales tropicales definen una economía agrícola diversificada. Las comunidades campesinas mantienen tradiciones agrícolas de la zona del Patía.",
     facts: [
       "Cañón del río Patía",
@@ -795,7 +795,7 @@ const municipiosData = {
     name: "Taminango",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/47/TAMINANGO.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/TAMINANGO.jpg",
     description: "Taminango es municipio noroccidental de Nariño a 1.100 m.s.n.m., en la zona del Patía. Es el principal productor de maní del departamento, con una economía basada en la agricultura de clima cálido y la producción de frutales tropicales.",
     facts: [
       "Principal productor de maní del departamento",
@@ -812,7 +812,7 @@ const municipiosData = {
     name: "El Charco",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tumaco_-_Parque_Col%C3%B3n.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tumaco_-_Parque_Col%C3%B3n.jpg",
     description: "El Charco es municipio costero de la región Sanquianga en la costa pacífica nariñense, a nivel del mar. Su economía se basa en la pesca artesanal y la recolección de piangua, además de la explotación forestal. Comunidades afrodescendientes con rica cultura habitan este territorio de manglares y biodiversidad costera.",
     facts: [
       "Ubicado en la costa pacífica nariñense",
@@ -921,7 +921,7 @@ const municipiosData = {
     name: "Barbacoas",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/R%C3%ADo_Telemb%C3%AD_-_Barbacoas%2C_noviembre_de_2024.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%ADo_Telemb%C3%AD_-_Barbacoas,_noviembre_de_2024.jpg",
     description: "Barbacoas es la histórica ciudad minera del Pacífico nariñense, a orillas del río Telembí. Con una tradición minera aurífera que data de la época colonial, es uno de los centros mineros más antiguos de Colombia. Comunidades afrodescendientes e indígenas Awá habitan este territorio de selva húmeda tropical de alta pluviosidad.",
     facts: [
       "Histórico centro de minería aurífera desde la Colonia",
@@ -936,7 +936,7 @@ const municipiosData = {
     name: "Magüí Payán",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/f0/R%C3%ADo_Telemb%C3%AD_-_Barbacoas%2C_noviembre_de_2024.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%ADo_Telemb%C3%AD_-_Barbacoas,_noviembre_de_2024.jpg",
     description: "Magüí Payán es municipio selvático de la cuenca del Telembí, con minería artesanal de oro y agricultura de subsistencia. Sus paisajes de selva húmeda tropical del Pacífico albergan alta biodiversidad. Comunidades afrodescendientes mantienen tradiciones culturales ancestrales en este territorio de gran valor ecológico.",
     facts: [
       "Selva húmeda del Pacífico nariñense",
@@ -951,7 +951,7 @@ const municipiosData = {
     name: "Roberto Payán",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Tumaco_-_Parque_Col%C3%B3n.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tumaco_-_Parque_Col%C3%B3n.jpg",
     description: "Roberto Payán, también conocido como San José, es municipio selvático de la cuenca del Telembí con alta biodiversidad de selva húmeda tropical. Su economía combina la minería artesanal, la agricultura de subsistencia y la explotación forestal en un territorio de gran valor ecológico.",
     facts: [
       "También conocido como San José",
