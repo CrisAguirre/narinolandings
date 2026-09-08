@@ -25,14 +25,11 @@ def search_image(muni_name):
             data = json.loads(response.read().decode())
             if data['query']['search']:
                 title = data['query']['search'][0]['title']
-                img_url_req = f"https://commons.wikimedia.org/w/api.php?action=query&titles={urllib.parse.quote(title)}&prop=imageinfo&iiprop=url&format=json"
-                req2 = urllib.request.Request(img_url_req, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'})
-                with urllib.request.urlopen(req2) as response2:
-                    img_data = json.loads(response2.read().decode())
-                    pages = img_data['query']['pages']
-                    page_id = list(pages.keys())[0]
-                    if 'imageinfo' in pages[page_id]:
-                        return pages[page_id]['imageinfo'][0]['url']
+                # Extract filename without "File:" prefix
+                filename = title.replace("File:", "").strip()
+                # Create the robust Special:FilePath URL
+                stable_url = f"https://commons.wikimedia.org/wiki/Special:FilePath/{urllib.parse.quote(filename)}"
+                return stable_url
     except Exception as e:
         print(f"Error for {muni_name}: {e}")
     return None

@@ -842,7 +842,7 @@ const municipiosData = {
     name: "Mosquera",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Manglares_de_San_Quianga.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Crep%C3%BAsculo_en_el_parque_Natural_Sanquianga.jpg",
     description: "Mosquera es municipio costero del Pacífico con abundantes recursos hídricos y manglares en la llanura pacífica nariñense. La economía combina la recolección de piangua, pesca artesanal y explotación de la selva húmeda tropical del Pacífico, con comunidades afrodescendientes de gran tradición cultural.",
     facts: [
       "Ríos y esteros de la llanura pacífica",
@@ -857,7 +857,7 @@ const municipiosData = {
     name: "Olaya Herrera",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Manglares_de_San_Quianga.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Crep%C3%BAsculo_en_el_parque_Natural_Sanquianga.jpg",
     description: "Olaya Herrera, también conocido como Bocas de Satinga, es municipio de la costa pacífica a nivel del mar. La desembocadura del río Satinga define su geografía costera con manglares y ecosistemas acuáticos. La economía combina la pesca, la recolección de concha y la agricultura de subsistencia en un territorio de selva húmeda tropical.",
     facts: [
       "También llamado Bocas de Satinga",
@@ -872,7 +872,7 @@ const municipiosData = {
     name: "Santa Bárbara (Iscuandé)",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Manglares_de_San_Quianga.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Crep%C3%BAsculo_en_el_parque_Natural_Sanquianga.jpg",
     description: "Santa Bárbara, también conocido como Iscuandé, es municipio costero con tradición pesquera y herencia cultural afrocolombiana. Su economía se basa en la pesca artesanal como principal actividad, con manglares y ecosistemas costeros de gran valor ecológico en la llanura pacífica.",
     facts: [
       "También conocido como Iscuandé",
