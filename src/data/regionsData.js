@@ -86,7 +86,7 @@ export const regionsData = {
   // Occidente: Ancuya, Consacá, Linares, Sandoná
   "#ffadad": {
     name: "Subregión Occidente",
-    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg",
     description: "Región andina con clima templado muy agradable, famosa por sus artesanías en paja toquilla.",
     characteristics: [
       "Artesanías reconocidas internacionalmente (sombreros en Sandoná).",
