@@ -86,7 +86,7 @@ export const regionsData = {
   // Occidente: Ancuya, Consacá, Linares, Sandoná
   "#ffadad": {
     name: "Subregión Occidente",
-    image: "https://picsum.photos/seed/occidente/400/200",
+    image: "https://dondevamoseva.com/wp-content/uploads/2025/10/sandona-narino-panorama-montanas-ciudad-dulce.jpg",
     description: "Región andina con clima templado muy agradable, famosa por sus artesanías en paja toquilla.",
     characteristics: [
       "Artesanías reconocidas internacionalmente (sombreros en Sandoná).",
@@ -146,7 +146,7 @@ export const regionsData = {
   // Guambuyaco: El Peñol, El Tambo, La Llanada, Los Andes Sotomayor
   "#fffc9a": {
     name: "Subregión Guambuyaco",
-    image: "https://picsum.photos/seed/guambuyaco/400/200",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/GUACHAVES_PANORAMICA.jpg",
     description: "Región de montañas y valles templados, con una combinación de economía agrícola y minera.",
     characteristics: [
       "Importante producción minera (oro en La Llanada y Los Andes).",
