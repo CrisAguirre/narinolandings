@@ -99,10 +99,10 @@ export default function EvaluationTab() {
     formData.append("_captcha", "false");
     formData.append("_subject", `Nueva Evaluación Nariño - ${studentInfo.name} (${finalScore}/10)`);
     formData.append("_template", "table");
-    formData.append("_to", "crisaguirredev@gmail.com,patrykaz1626@gmail.com");
+    formData.append("_cc", "patrykaz1626@gmail.com");
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax", {
+      const response = await fetch("https://formsubmit.co/ajax/crisaguirredev@gmail.com", {
         method: "POST",
         body: formData
       });
