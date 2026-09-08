@@ -120,7 +120,7 @@ const municipiosData = {
     name: "Aldana",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/MunsNarino_Aldana.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Aldana es un municipio del altiplano nariñense a 2.820 m.s.n.m., con fuerte herencia indígena Pasto y tradiciones ancestrales preservadas por sus comunidades originarias. Es conocido por su producción agrícola de clima frío y su ubicación estratégica cerca de la frontera con Ecuador. El municipio mantiene prácticas culturales de la cultura Pasto, incluyendo la música, danzas y festividades religiosas tradicionales.",
     facts: [
       "Resguardo indígena de los Pastos con comunidades activas",
@@ -136,7 +136,7 @@ const municipiosData = {
     name: "Contadero",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/MunsNarino_Contadero.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Contadero es un municipio del altiplano de Túquerres-Ipiales a 3.020 m.s.n.m., con vocación agropecuaria y fuerte tradición campesina. Su economía se basa en la producción de papa, leche y hortalizas de clima frío, en un territorio donde la minifundia es la forma dominante de organización agrícola. El municipio forma parte de la meseta más alta de Nariño, con paisajes de páramo y andenes precolombinos.",
     facts: [
       "Altitud: 3.020 m.s.n.m., uno de los más altos de Nariño",
@@ -151,7 +151,7 @@ const municipiosData = {
     name: "Córdoba",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Vista_panoramica_de_Cordoba%2C_Nari%C3%B1o_I_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Córdoba es un municipio del altiplano nariñense con paisajes de páramo y laguna, situado a 2.950 m.s.n.m. En su territorio se encuentra la Laguna de La Bolsa, atractivo natural de aguas frías rodeado de frailejones. La economía se basa en la agroganadería de clima frío con producción de papa, trigo y leche. El municipio mantiene comunidades indígenas Pasto con sus tradiciones culturales y lengua.",
     facts: [
       "Laguna de La Bolsa: atractivo natural de páramo",
@@ -166,7 +166,7 @@ const municipiosData = {
     name: "Cuaspud (Carlosama)",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Lugar_de_la_batalla_de_cuaspud.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Cuaspud, también conocido como Carlosama, es un municipio fronterizo con Ecuador en la meseta de Túquerres-Ipiales a 2.900 m.s.n.m. Es territorio del pueblo indígena de los Pastos, con el resguardo de Carlosama como centro de su identidad cultural. Su economía se basa en la agricultura de papa y la ganadería de clima frío, manteniendo prácticas ancestrales de cultivo en andenes prehispánicos.",
     facts: [
       "Resguardo indígena Pasto de Carlosama",
@@ -181,7 +181,7 @@ const municipiosData = {
     name: "Cumbal",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Panor%C3%A1mica_Municipio_de_Cumbal.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Cumbal es un municipio dominado por el imponente volcán Cumbal (4.764 m), el segundo volcán más alto de Colombia, situado a 3.450 m.s.n.m. En su territorio se encuentran las sagradas lagunas de La Bolsa y Cumbal, sitios de peregrinación indígena. Es territorio ancestral del pueblo Pasto con fuerte identidad cultural. Su economía combina la agricultura de papa y cereales con el turismo volcánico y religioso.",
     facts: [
       "Volcán Cumbal (4.764 m): segundo volcán más alto de Colombia",
@@ -519,7 +519,7 @@ const municipiosData = {
     name: "La Llanada",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/MunsNarino_La_Llanada.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "La Llanada es reconocido como el principal centro minero aurífero del departamento de Nariño, con una tradición minera que data de la época colonial. Situado a 1.400 m.s.n.m., su economía se basa en la extracción artesanal de oro, complementada con agricultura de café y caña. Es un municipio de gran importancia económica por su producción minera.",
     facts: [
       "Capital minera de Nariño: extracción artesanal de oro",
@@ -534,7 +534,7 @@ const municipiosData = {
     name: "Los Andes (Sotomayor)",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/MUNICIPIO_DE_LOS_ANDES_EN_EL_DEPARTAMENTO_DE_NARI%C3%91O.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Los Andes, también conocido como Sotomayor, es municipio de economía mixta agrícola-minera en la subregión Guambuyaco, a 1.500 m.s.n.m. en el cañón del Guáitara. Combina la producción de café con la minería artesanal de oro, en un territorio montañoso de gran valor ecológico y cultural.",
     facts: [
       "Históricamente conocido como Sotomayor",
@@ -551,7 +551,7 @@ const municipiosData = {
     name: "La Unión",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/La_Union_Nari%C3%B1o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "La Unión es reconocida como la capital cafetera de Nariño, con producción de café especial de alta calidad a 1.500 m.s.n.m. en el cañón del Juanambú. Es centro comercial de la subregión y principal mercado cafetero del departamento, con café de origen que cuenta con Denominación de Origen. Su clima templado es ideal para el cultivo de café especial.",
     facts: [
       "Capital cafetera de Nariño y principal mercado cafetero",
@@ -566,7 +566,7 @@ const municipiosData = {
     name: "Arboleda (Berruecos)",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/%C2%AE_M.D._MADRID_PARQUE_DEL_OESTE_ARBOLEDA_%E2%97%99_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Arboleda, también conocido como Berruecos, es un municipio histórico de Nariño a 1.600 m.s.n.m. donde fue asesinado el Mariscal Antonio José de Sucre el 4 de junio de 1830. El municipio honra este hecho histórico con monumentos y museos. Su economía combina la producción de café y frutales con el turismo histórico-cultural.",
     facts: [
       "Sitio histórico: asesinato del Mariscal Sucre (1830)",
@@ -581,7 +581,7 @@ const municipiosData = {
     name: "Buesaco",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parque_7_de_Agosto%2C_Buesaco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Buesaco es un municipio cafetero del cañón del Juanambú, situado a 1.700 m.s.n.m. con producción de café especial de alta calidad. Su territorio incluye el cañón del río Juanambú con paisajes de gran valor ecológico. El clima variado desde frío hasta templado permite una agricultura diversificada de café, frutales y hortalizas.",
     facts: [
       "Café especial de alta calidad y reconocimiento",
