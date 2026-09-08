@@ -120,7 +120,7 @@ const municipiosData = {
     name: "Aldana",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Flag_of_Aldana_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Aldana es un municipio del altiplano nariñense a 2.820 m.s.n.m., con fuerte herencia indígena Pasto y tradiciones ancestrales preservadas por sus comunidades originarias. Es conocido por su producción agrícola de clima frío y su ubicación estratégica cerca de la frontera con Ecuador. El municipio mantiene prácticas culturales de la cultura Pasto, incluyendo la música, danzas y festividades religiosas tradicionales.",
     facts: [
       "Resguardo indígena de los Pastos con comunidades activas",
@@ -136,7 +136,7 @@ const municipiosData = {
     name: "Contadero",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/08/Flag_of_Contadero_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Contadero es un municipio del altiplano de Túquerres-Ipiales a 3.020 m.s.n.m., con vocación agropecuaria y fuerte tradición campesina. Su economía se basa en la producción de papa, leche y hortalizas de clima frío, en un territorio donde la minifundia es la forma dominante de organización agrícola. El municipio forma parte de la meseta más alta de Nariño, con paisajes de páramo y andenes precolombinos.",
     facts: [
       "Altitud: 3.020 m.s.n.m., uno de los más altos de Nariño",
@@ -151,7 +151,7 @@ const municipiosData = {
     name: "Córdoba",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/81/Flag_of_C%C3%B3rdoba_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Córdoba es un municipio del altiplano nariñense con paisajes de páramo y laguna, situado a 2.950 m.s.n.m. En su territorio se encuentra la Laguna de La Bolsa, atractivo natural de aguas frías rodeado de frailejones. La economía se basa en la agroganadería de clima frío con producción de papa, trigo y leche. El municipio mantiene comunidades indígenas Pasto con sus tradiciones culturales y lengua.",
     facts: [
       "Laguna de La Bolsa: atractivo natural de páramo",
@@ -166,7 +166,7 @@ const municipiosData = {
     name: "Cuaspud (Carlosama)",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Cuaspud_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Cuaspud, también conocido como Carlosama, es un municipio fronterizo con Ecuador en la meseta de Túquerres-Ipiales a 2.900 m.s.n.m. Es territorio del pueblo indígena de los Pastos, con el resguardo de Carlosama como centro de su identidad cultural. Su economía se basa en la agricultura de papa y la ganadería de clima frío, manteniendo prácticas ancestrales de cultivo en andenes prehispánicos.",
     facts: [
       "Resguardo indígena Pasto de Carlosama",
@@ -181,7 +181,7 @@ const municipiosData = {
     name: "Cumbal",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Flag_of_Cumbal_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Cumbal es un municipio dominado por el imponente volcán Cumbal (4.764 m), el segundo volcán más alto de Colombia, situado a 3.450 m.s.n.m. En su territorio se encuentran las sagradas lagunas de La Bolsa y Cumbal, sitios de peregrinación indígena. Es territorio ancestral del pueblo Pasto con fuerte identidad cultural. Su economía combina la agricultura de papa y cereales con el turismo volcánico y religioso.",
     facts: [
       "Volcán Cumbal (4.764 m): segundo volcán más alto de Colombia",
@@ -211,7 +211,7 @@ const municipiosData = {
     name: "Guachucal",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_Guachucal_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Guachucal es el principal centro lechero de Nariño, situado a 2.880 m.s.n.m. en el altiplano de Túquerres-Ipiales. Es reconocido por su industria láctea que abastece gran parte del departamento, produciendo quesos y leche de alta calidad. El municipio tiene fuerte presencia del resguardo indígena Pasto y mantiene tradiciones culturales ancestrales. Su economía se complementa con la agricultura de papa y cebada.",
     facts: [
       "Principal zona lechera del departamento de Nariño",
@@ -226,7 +226,7 @@ const municipiosData = {
     name: "Gualmatán",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Flag_of_Gualmat%C3%A1n_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Gualmatán es uno de los municipios más pequeños de Nariño en extensión territorial, ubicado a 2.750 m.s.n.m. en el altiplano de Túquerres. Con economía basada en la agricultura de papa y hortalizas, mantiene tradiciones culturales de la cultura Pasto. Su pequeño territorio montañoso alberga comunidades campesinas e indígenas con una fuerte identidad regional.",
     facts: [
       "Uno de los municipios con menor extensión territorial de Nariño",
@@ -241,7 +241,7 @@ const municipiosData = {
     name: "Iles",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5d/Flag_of_Iles_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Iles es un municipio del altiplano nariñense a 2.850 m.s.n.m., con vocación agropecuaria y paisajes de montaña. Su economía se basa en la producción de papa, trigo, cebada y ganadería lechera de pequeña escala. El municipio mantiene tradiciones culturales de la zona andina con festividades religiosas y eventos campesinos que reflejan su identidad altitudeña.",
     facts: [
       "Altitud: 2.850 m.s.n.m., clima frío",
@@ -256,7 +256,7 @@ const municipiosData = {
     name: "Potosí",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Potos%C3%AD_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Potosí es un municipio fronterizo con Ecuador en la zona del volcán Chiles (4.748 m), situado a 3.350 m.s.n.m. En su territorio se encuentran las aguas termales de Chiles, atractivo turístico de aguas ricas en minerales. La economía combina la agricultura de clima frío con el turismo volcánico. Es uno de los municipios más altos de Nariño, con paisajes de alta montaña y comunidades indígenas Pasto.",
     facts: [
       "Volcán Chiles (4.748 m) en su territorio",
@@ -271,7 +271,7 @@ const municipiosData = {
     name: "Puerres",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/ed/Bandera_puerres.png",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Puerres es un municipio agrícola ubicado entre Pasto e Ipiales en el Valle del Guáitara, a 2.400 m.s.n.m. Con valle fértil regado por el río Guáitara, es productor de papa, cebada y frutales. El municipio combina la agricultura de clima templado-frío con la ganadería, en un territorio de paisajes andinos y comunidades campesinas tradicionales.",
     facts: [
       "Valle del río Guáitara con tierras fértiles",
@@ -286,7 +286,7 @@ const municipiosData = {
     name: "Pupiales",
     subregion: "Obando",
     color: "#e85a6f",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_Pupiales_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Pupiales es un municipio del altiplano de Obando a 2.780 m.s.n.m., reconocido como centro agrícola de la subregión. Sus principales productos son la papa, los lácteos y las hortalizas. Las fiestas patronales de Pupiales son eventos culturales de gran tradición en la región, con procesiones, danzas y actividades típicas que reflejan la cultura altiplánica nariñense.",
     facts: [
       "Centro agrícola del altiplano de Obando",
@@ -318,7 +318,7 @@ const municipiosData = {
     name: "Guaitarilla",
     subregion: "Sabana",
     color: "#9b8ec7",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/23/Flag_of_Guaitarilla_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Guaitarilla es un municipio agrícola del altiplano nariñense a 2.650 m.s.n.m., productor de papa y hortalizas. Su territorio incluye parte del cañón del río Guáitara, con paisajes de gran valor ecológico. Es conocido por su artesanía tradicional y sus festividades culturales que reflejan la identidad de la región Sabana de Nariño.",
     facts: [
       "Cañón del río Guáitara en sus límites",
@@ -333,7 +333,7 @@ const municipiosData = {
     name: "Imués",
     subregion: "Sabana",
     color: "#9b8ec7",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Flag_of_Imu%C3%A9s_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Imués es un municipio de la meseta andina del altiplano nariñense a 2.750 m.s.n.m., con economía agrícola tradicional basada en el cultivo de papa, trigo y maíz. Sus paisajes de páramo y montaña ofrecen vistas panorámicas de la cordillera. El municipio mantiene tradiciones culturales indígenas y campesinas con festividades religiosas de gran arraigo.",
     facts: [
       "Altitud: 2.750 m.s.n.m., meseta andina",
@@ -348,7 +348,7 @@ const municipiosData = {
     name: "Ospina",
     subregion: "Sabana",
     color: "#9b8ec7",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Ospina_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Ospina es un pequeño municipio del altiplano nariñense a 2.700 m.s.n.m., con vocación agropecuaria de clima frío. Su economía se basa en la agricultura de papa, cebada y trigo, complementada con la ganadería lechera. Ospina forma parte de la subregión Sabana y mantiene tradiciones campesinas ancestrales con un fuerte sentido de identidad regional.",
     facts: [
       "Altitud: 2.700 m.s.n.m., clima frío",
@@ -363,7 +363,7 @@ const municipiosData = {
     name: "Sapuyes",
     subregion: "Sabana",
     color: "#9b8ec7",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Sapuyes_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Sapuyes es un municipio del altiplano nariñense a 2.800 m.s.n.m., situado en la meseta de Túquerres. Tierra fría productora de papa y leche, su economía se basa en la agricultura de clima frío y la ganadería lechera. Sus paisajes de páramo y montaña albergan ecosistemas de alta montaña con comunidades campesinas e indígenas.",
     facts: [
       "Altitud: 2.800 m.s.n.m., clima frío",
@@ -395,7 +395,7 @@ const municipiosData = {
     name: "Ancuyá",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Ancuya_%28Nari%C3%B1o%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Ancuyá es un municipio de clima templado a cálido en la cordillera occidental de Nariño, situado a 1.800 m.s.n.m. Es productor de café de origen y caña de azúcar, con paisajes de laderas y cañones de gran belleza natural. La tradición campesina y artesanal es parte fundamental de la identidad de este municipio de la subregión Occidente.",
     facts: [
       "Altitud: 1.800 m.s.n.m., clima templado-cálido",
@@ -425,7 +425,7 @@ const municipiosData = {
     name: "Linares",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Bulletin_Of_The_Pan_American_Union_1948-04-_Vol_82_Iss_4_%28IA_sim_bulletin-of-the-pan-american-union_1948-04_82_4%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Linares es un municipio de clima templado a cálido en la cordillera occidental, situado a 1.650 m.s.n.m. Tierra de panela y café, limita con el cañón del río Guáitara. Su economía se basa en la producción artesanal de panela, el cultivo de café y frutales tropicales, con paisajes de laderas montañosas de gran valor ecológico.",
     facts: [
       "Altitud: 1.650 m.s.n.m., clima templado-cálido",
@@ -442,7 +442,7 @@ const municipiosData = {
     name: "Samaniego",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Samaniego_%28Nari%C3%B1o%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Samaniego, conocida como 'Ciudad Paisaje y Musical', es un importante centro cultural del suroccidente nariñense, situado a 1.600 m.s.n.m. en la cordillera occidental. Es reconocida por sus bandas musicales y compositores que han dado fama al municipio a nivel nacional. Su economía combina la producción de café, caña panelera y frutales, en un relieve montañoso con vistas panorámicas espectaculares.",
     facts: [
       "'Ciudad Paisaje y Musical' de Colombia",
@@ -457,7 +457,7 @@ const municipiosData = {
     name: "Providencia",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Una_visita_a_San_Mateo%2C_el_25_de_junio_de_1916_%28IA_unavisitasanmate00viva%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Providencia es un municipio de montaña en la subregión Abades, situado a 1.800 m.s.n.m. en la cordillera occidental. Su economía combina la minería artesanal de oro con la agricultura de café y caña panelera. Los terrenos quebrados de la cordillera occidental configuran un paisaje de gran belleza natural y挑战 técnico para la agricultura.",
     facts: [
       "Altitud: 1.800 m.s.n.m., cordillera occidental",
@@ -489,7 +489,7 @@ const municipiosData = {
     name: "El Peñol",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_El_Pe%C3%B1ol_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "El Peñol es un municipio de montaña en la subregión Guambuyaco, situado a 1.700 m.s.n.m. en la cordillera occidental. Su economía combina la agricultura de café y caña panelera con la minería artesanal de oro en pequeña escala. Los paisajes montañosos de la cordillera y las comunidades campesinas definen la identidad de este municipio nariñense.",
     facts: [
       "Altitud: 1.700 m.s.n.m., cordillera occidental",
@@ -504,7 +504,7 @@ const municipiosData = {
     name: "El Tambo",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1f/Flag_of_El_Tambo_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "El Tambo es un municipio de clima templado a cálido en la subregión Guambuyaco, situado a 1.500 m.s.n.m. Es punto de tránsito hacia la costa pacífica nariñense. Su economía se basa en la producción de café, caña panelera y frutales, con una geografía que varía de montañosa a tropical baja.",
     facts: [
       "Altitud: 1.500 m.s.n.m., clima templado-cálido",
@@ -519,7 +519,7 @@ const municipiosData = {
     name: "La Llanada",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e9/Flag_of_La_Llanada_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "La Llanada es reconocido como el principal centro minero aurífero del departamento de Nariño, con una tradición minera que data de la época colonial. Situado a 1.400 m.s.n.m., su economía se basa en la extracción artesanal de oro, complementada con agricultura de café y caña. Es un municipio de gran importancia económica por su producción minera.",
     facts: [
       "Capital minera de Nariño: extracción artesanal de oro",
@@ -534,7 +534,7 @@ const municipiosData = {
     name: "Los Andes (Sotomayor)",
     subregion: "Guambuyaco",
     color: "#e8d850",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Flag_of_Los_Andes_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Los Andes, también conocido como Sotomayor, es municipio de economía mixta agrícola-minera en la subregión Guambuyaco, a 1.500 m.s.n.m. en el cañón del Guáitara. Combina la producción de café con la minería artesanal de oro, en un territorio montañoso de gran valor ecológico y cultural.",
     facts: [
       "Históricamente conocido como Sotomayor",
@@ -551,7 +551,7 @@ const municipiosData = {
     name: "La Unión",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Flag_of_La_Uni%C3%B3n_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "La Unión es reconocida como la capital cafetera de Nariño, con producción de café especial de alta calidad a 1.500 m.s.n.m. en el cañón del Juanambú. Es centro comercial de la subregión y principal mercado cafetero del departamento, con café de origen que cuenta con Denominación de Origen. Su clima templado es ideal para el cultivo de café especial.",
     facts: [
       "Capital cafetera de Nariño y principal mercado cafetero",
@@ -566,7 +566,7 @@ const municipiosData = {
     name: "Arboleda (Berruecos)",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Flag_of_Arboleda_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Arboleda, también conocido como Berruecos, es un municipio histórico de Nariño a 1.600 m.s.n.m. donde fue asesinado el Mariscal Antonio José de Sucre el 4 de junio de 1830. El municipio honra este hecho histórico con monumentos y museos. Su economía combina la producción de café y frutales con el turismo histórico-cultural.",
     facts: [
       "Sitio histórico: asesinato del Mariscal Sucre (1830)",
@@ -581,7 +581,7 @@ const municipiosData = {
     name: "Buesaco",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0b/Flag_of_Buesaco_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Buesaco es un municipio cafetero del cañón del Juanambú, situado a 1.700 m.s.n.m. con producción de café especial de alta calidad. Su territorio incluye el cañón del río Juanambú con paisajes de gran valor ecológico. El clima variado desde frío hasta templado permite una agricultura diversificada de café, frutales y hortalizas.",
     facts: [
       "Café especial de alta calidad y reconocimiento",
@@ -596,7 +596,7 @@ const municipiosData = {
     name: "San Lorenzo",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Flag_of_San_Lorenzo_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "San Lorenzo es un municipio cafetero ubicado en el cañón del Juanambú a 1.600 m.s.n.m. Su economía se basa en la producción de café pergamino y la agricultura de ladera con frutales. Los paisajes del cañón del Juanambú ofrecen vistas panorámicas de gran valor turístico y ecológico.",
     facts: [
       "Producción de café pergamino de alta calidad",
@@ -611,7 +611,7 @@ const municipiosData = {
     name: "San Pedro de Cartago",
     subregion: "Juanambú",
     color: "#8abf45",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/4a/Flag_of_San_Pedro_de_Cartago_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "San Pedro de Cartago es un municipio del norte de Nariño a 1.400 m.s.n.m. con economía cafetera y agropecuaria. Ubicado en la vertiente del río Juanambú, tiene un clima templado favorable para la agricultura diversificada. Es un punto de conexión entre la cordillera y el piedemonte del departamento.",
     facts: [
       "Producción de café y ganadería",
@@ -628,7 +628,7 @@ const municipiosData = {
     name: "La Cruz",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_La_Cruz_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "La Cruz es el principal centro urbano de la subregión Río Mayo, situado a 1.300 m.s.n.m. en la vertiente norte del departamento. Punto de convergencia comercial del nororiente nariñense, su economía combina la producción de café, frutales y ganadería con el comercio regional. Es nudo de comunicaciones hacia el norte de Nariño y el Cauca.",
     facts: [
       "Centro comercial y de servicios del Río Mayo",
@@ -643,7 +643,7 @@ const municipiosData = {
     name: "Albán (San José)",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Flag_of_Alb%C3%A1n_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Albán, también conocido como San José de Albán, es municipio del nororiente nariñense a 1.400 m.s.n.m. con vocación agropecuaria. Su economía se basa en la producción de café y frutales de clima templado, en un territorio de montaña y valles con comunidades campesinas tradicionales.",
     facts: [
       "También conocido como San José de Albán",
@@ -658,7 +658,7 @@ const municipiosData = {
     name: "Belén",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flag_of_Bel%C3%A9n_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Belén es un municipio de la cuenca del río Mayo a 1.200 m.s.n.m., con economía agrícola y ganadera. La cuenca del río Mayo proporciona tierras fértiles para el cultivo de caña panelera, café y frutales. Su clima templado-cálido y su ubicación en la vertiente oriental definen su vocación agropecuaria.",
     facts: [
       "Cuenca del río Mayo con tierras fértiles",
@@ -673,7 +673,7 @@ const municipiosData = {
     name: "Colón (Génova)",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Flag_of_Col%C3%B3n_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Colón, también conocido como Génova, es municipio de la cuenca del río Mayo a 1.300 m.s.n.m. con tradición agrícola. Su economía combina la producción de café y frutales con la ganadería, en un territorio de la vertiente oriental nariñense con clima templado-cálido.",
     facts: [
       "También conocido como Génova",
@@ -688,7 +688,7 @@ const municipiosData = {
     name: "El Tablón de Gómez",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Flag_of_El_Tabl%C3%B3n_de_G%C3%B3mez_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "El Tablón de Gómez es un municipio con importante zona arqueológica y vestigios precolombinos en su territorio, situado a 1.800 m.s.n.m. Cerca del Parque Nacional Natural Doña Juana - Cascabel, combina la producción de café de alta montaña con el turismo cultural y ecológico. Los petroglifos y vestigios indígenas testimonian una ocupación ancestral.",
     facts: [
       "Zona arqueológica con petroglifos y vestigios indígenas",
@@ -703,7 +703,7 @@ const municipiosData = {
     name: "San Bernardo",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_San_Bernardo_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "San Bernardo es un municipio del nororiente de Nariño, en las estribaciones del macizo colombiano a 1.500 m.s.n.m. Con importantes fuentes hídricas y clima templado, su economía se basa en la producción de café y frutales. Es parte de la cuenca alta del río Juanambú con paisajes de gran valor ecológico.",
     facts: [
       "Estribaciones del Macizo Colombiano",
@@ -718,7 +718,7 @@ const municipiosData = {
     name: "San Pablo",
     subregion: "Río Mayo",
     color: "#f0b060",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_San_Pablo_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "San Pablo es el municipio más septentrional de Nariño, zona de transición entre el departamento y el Cauca a 1.200 m.s.n.m. Su economía combina la producción de café y ganadería en un territorio de clima templado-cálido que marca la frontera norte del departamento.",
     facts: [
       "Límite norte del departamento de Nariño",
@@ -735,7 +735,7 @@ const municipiosData = {
     name: "Policarpa",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3a/Flag_of_Policarpa_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Policarpa es un municipio del cañón del río Patía a 1.200 m.s.n.m., nombrado en honor a la heroína independentista Policarpa Salavarrieta 'La Pola'. Con clima cálido, su economía se basa en la producción de cacao, maní y frutales tropicales. El cañón del Patía ofrece paisajes de gran valor turístico y ecológico.",
     facts: [
       "Nombrado en honor a Policarpa Salavarrieta 'La Pola'",
@@ -750,7 +750,7 @@ const municipiosData = {
     name: "Cumbitara",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Flag_of_Cumbitara_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Cumbitara es municipio de clima cálido en el cañón del Patía a 1.100 m.s.n.m., con vocación agrícola. Su economía combina la producción de maní, cacao y frutales tropicales con la minería artesanal de oro. Los paisajes del cañón del Patía configuran un territorio de gran diversidad ecológica.",
     facts: [
       "Valle del río Patía con climas cálidos",
@@ -765,7 +765,7 @@ const municipiosData = {
     name: "El Rosario",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_El_Rosario_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "El Rosario es municipio de la zona seca del Patía a 1.300 m.s.n.m., con producción de cacao y frutales. Su clima cálido y semiárido define una economía agrícola adaptada a las condiciones del cañón del Patía, con comunidades campesinas tradicionales.",
     facts: [
       "Zona semiárida del cañón del Patía",
@@ -780,7 +780,7 @@ const municipiosData = {
     name: "Leiva",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Flag_of_Leiva_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Leiva es municipio del cañón del Patía a 1.200 m.s.n.m. con economía basada en agricultura de clima cálido. Sus cultivos de maní, cacao y frutales tropicales definen una economía agrícola diversificada. Las comunidades campesinas mantienen tradiciones agrícolas de la zona del Patía.",
     facts: [
       "Cañón del río Patía",
@@ -795,7 +795,7 @@ const municipiosData = {
     name: "Taminango",
     subregion: "Cordillera",
     color: "#e89548",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Flag_of_Taminango_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Taminango es municipio noroccidental de Nariño a 1.100 m.s.n.m., en la zona del Patía. Es el principal productor de maní del departamento, con una economía basada en la agricultura de clima cálido y la producción de frutales tropicales.",
     facts: [
       "Principal productor de maní del departamento",
@@ -812,7 +812,7 @@ const municipiosData = {
     name: "El Charco",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8f/Flag_of_El_Charco_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "El Charco es municipio costero de la región Sanquianga en la costa pacífica nariñense, a nivel del mar. Su economía se basa en la pesca artesanal y la recolección de piangua, además de la explotación forestal. Comunidades afrodescendientes con rica cultura habitan este territorio de manglares y biodiversidad costera.",
     facts: [
       "Ubicado en la costa pacífica nariñense",
@@ -827,7 +827,7 @@ const municipiosData = {
     name: "La Tola",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_La_Tola_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "La Tola es municipio costero del Pacífico, puerta de entrada al Parque Nacional Natural Sanquianga. Sus extensos manglares y bosques de costa albergan una biodiversidad excepcional. La economía se basa en la pesca artesanal, la recolección de piangua y la madera, con comunidades afrodescendientes de fuerte identidad cultural.",
     facts: [
       "Acceso al Parque Nacional Natural Sanquianga",
@@ -842,7 +842,7 @@ const municipiosData = {
     name: "Mosquera",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Mosquera_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Mosquera es municipio costero del Pacífico con abundantes recursos hídricos y manglares en la llanura pacífica nariñense. La economía combina la recolección de piangua, pesca artesanal y explotación de la selva húmeda tropical del Pacífico, con comunidades afrodescendientes de gran tradición cultural.",
     facts: [
       "Ríos y esteros de la llanura pacífica",
@@ -857,7 +857,7 @@ const municipiosData = {
     name: "Olaya Herrera",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/c6/Flag_of_Olaya_Herrera_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Olaya Herrera, también conocido como Bocas de Satinga, es municipio de la costa pacífica a nivel del mar. La desembocadura del río Satinga define su geografía costera con manglares y ecosistemas acuáticos. La economía combina la pesca, la recolección de concha y la agricultura de subsistencia en un territorio de selva húmeda tropical.",
     facts: [
       "También llamado Bocas de Satinga",
@@ -872,7 +872,7 @@ const municipiosData = {
     name: "Santa Bárbara (Iscuandé)",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/d7/Flag_of_Santa_B%C3%A1rbara_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Santa Bárbara, también conocido como Iscuandé, es municipio costero con tradición pesquera y herencia cultural afrocolombiana. Su economía se basa en la pesca artesanal como principal actividad, con manglares y ecosistemas costeros de gran valor ecológico en la llanura pacífica.",
     facts: [
       "También conocido como Iscuandé",
@@ -904,7 +904,7 @@ const municipiosData = {
     name: "Francisco Pizarro (Salahonda)",
     subregion: "Pacífico Sur",
     color: "#e8c850",
-    image: "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flag_of_Francisco_Pizarro_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Francisco Pizarro, también conocido como Salahonda, es municipio costero del Pacífico a nivel del mar. Su economía se basa en la pesca artesanal y la recolección de moluscos, con comunidades afrodescendientes del Pacífico que mantienen vivas tradiciones culturales ancestrales.",
     facts: [
       "También conocido como Salahonda",
@@ -921,7 +921,7 @@ const municipiosData = {
     name: "Barbacoas",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Flag_of_Barbacoas_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Barbacoas es la histórica ciudad minera del Pacífico nariñense, a orillas del río Telembí. Con una tradición minera aurífera que data de la época colonial, es uno de los centros mineros más antiguos de Colombia. Comunidades afrodescendientes e indígenas Awá habitan este territorio de selva húmeda tropical de alta pluviosidad.",
     facts: [
       "Histórico centro de minería aurífera desde la Colonia",
@@ -936,7 +936,7 @@ const municipiosData = {
     name: "Magüí Payán",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Mag%C3%BC%C3%AD_Pay%C3%A1n_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Magüí Payán es municipio selvático de la cuenca del Telembí, con minería artesanal de oro y agricultura de subsistencia. Sus paisajes de selva húmeda tropical del Pacífico albergan alta biodiversidad. Comunidades afrodescendientes mantienen tradiciones culturales ancestrales en este territorio de gran valor ecológico.",
     facts: [
       "Selva húmeda del Pacífico nariñense",
@@ -951,7 +951,7 @@ const municipiosData = {
     name: "Roberto Payán",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://upload.wikimedia.org/wikipedia/commons/2/2b/Flag_of_Roberto_Pay%C3%A1n_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Roberto Payán, también conocido como San José, es municipio selvático de la cuenca del Telembí con alta biodiversidad de selva húmeda tropical. Su economía combina la minería artesanal, la agricultura de subsistencia y la explotación forestal en un territorio de gran valor ecológico.",
     facts: [
       "También conocido como San José",
@@ -968,7 +968,7 @@ const municipiosData = {
     name: "Mallama (Piedrancha)",
     subregion: "Piedemonte Costero",
     color: "#b8d86a",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flag_of_Mallama_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Mallama, también conocido como Piedrancha, es municipio de transición andina-costera y territorio del pueblo indígena Awá. Situado entre los Andes y el Pacífico, alberga alta biodiversidad y bosques de niebla de gran valor ecológico. Su economía combina la agricultura de subsistencia con la minería artesanal.",
     facts: [
       "También conocido como Piedrancha",
@@ -983,7 +983,7 @@ const municipiosData = {
     name: "Ricaurte",
     subregion: "Piedemonte Costero",
     color: "#b8d86a",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Flag_of_Ricaurte_%28Nari%C3%B1o%29.svg",
+    image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f62?q=80&w=800&auto=format&fit=crop",
     description: "Ricaurte es municipio del piedemonte costero que alberga la Reserva Natural La Planada, uno de los lugares con mayor biodiversidad de aves de Colombia. De gran extensión territorial, sus bosques de niebla y montañas albergan comunidades Awá y una fauna y flora de extraordinaria riqueza.",
     facts: [
       "Reserva Natural La Planada: biodiversidad de aves",

@@ -14,7 +14,7 @@ export const regionsData = {
   // Pacífico Sur: Tumaco, Francisco Pizarro
   "#fffdc0": {
     name: "Subregión Pacífico Sur",
-    image: "https://picsum.photos/seed/pacificosur/400/200",
+    image: "https://picsum.photos/seed/sabana/400/200",
     description: "Zona costera de gran importancia portuaria y turística. Principal centro urbano y económico del pacífico nariñense.",
     characteristics: [
       "Alberga el puerto marítimo de Tumaco, vital para el comercio.",
@@ -62,7 +62,7 @@ export const regionsData = {
   // Sabana: Guaitarilla, Imués, Ospina, Sapuyes, Túquerres
   "#bebad7": {
     name: "Subregión Sabana",
-    image: "https://picsum.photos/seed/sabana/400/200",
+    image: "https://turismo.narino.gov.co/wp-content/uploads/2025/10/1_Sabana_de_Tuquerres-scaled.jpg",
     description: "Altiplano andino con tierras fértiles, considerado una de las principales despensas agrícolas de Nariño.",
     characteristics: [
       "Producción intensiva de papa, hortalizas y lácteos.",
