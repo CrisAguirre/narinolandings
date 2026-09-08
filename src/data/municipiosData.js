@@ -7,7 +7,7 @@ const municipiosData = {
     name: "San Juan de Pasto",
     subregion: "Centro",
     color: "#4f9de8",
-    image: "https://upload.wikimedia.org/wikipedia/commons/b/bb/Catedral_de_San_Juan_de_Pasto.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Parque_Narino_Pasto.JPG",
     description: "Capital de Nariño y centro cultural del suroccidente colombiano, Pasto se alza a 2.527 m.s.n.m. en el valle de Atríz, al pie del imponente volcán Galeras. Fundada en 1537 por Sebastián de Belalcázar, es una de las ciudades coloniales más antiguas de Colombia. Reconocida mundialmente por su Carnaval de Negros y Blancos, declarado Patrimonio Inmaterial de la Humanidad por la UNESCO en 2009. Es el principal epicentro educativo, administrativo y comercial del departamento.",
     facts: [
       "Capital del departamento de Nariño con aprox. 480.000 habitantes",
@@ -380,7 +380,7 @@ const municipiosData = {
     name: "Sandoná",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Sandon%C3%A1_-_Nari%C3%B1o_2888600484824800467_n.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     description: "Sandoná es la capital artesanal de Nariño, mundialmente famosa por sus sombreros de iraca (paja toquilla). Ubicado a 1.750 m.s.n.m. en la cordillera occidental, es el principal centro de producción de sombreros 'vueltiaos' y 'aguadeños' de Colombia. Su economía combina la artesanía, el café de alta calidad y la panela. Las Fiestas del Sombrero son el evento cultural emblemático del municipio.",
     facts: [
       "Capital artesanal de Nariño: sombreros de paja toquilla reconocidos mundialmente",
@@ -395,7 +395,7 @@ const municipiosData = {
     name: "Ancuyá",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/1e/Flag_of_Ancuy%C3%A1_%28Nari%C3%B1o%29.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/f/f9/Flag_of_Ancuya_%28Nari%C3%B1o%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     description: "Ancuyá es un municipio de clima templado a cálido en la cordillera occidental de Nariño, situado a 1.800 m.s.n.m. Es productor de café de origen y caña de azúcar, con paisajes de laderas y cañones de gran belleza natural. La tradición campesina y artesanal es parte fundamental de la identidad de este municipio de la subregión Occidente.",
     facts: [
       "Altitud: 1.800 m.s.n.m., clima templado-cálido",
@@ -410,7 +410,7 @@ const municipiosData = {
     name: "Consacá",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/1/15/Consaca.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Colombia_-_Nari%C3%B1o_-_Consac%C3%A1.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     description: "Consacá es un municipio histórico al pie del volcán Galeras, a 1.900 m.s.n.m., escenario de la célebre Batalla de Bomboná (1822) que selló la independencia de Colombia. Sus aguas termales y paisajes volcanicos lo convierten en destino turístico. La economía combina la agricultura de café y frutales con el turismo histórico y termal, en un territorio de great valor cultural y natural.",
     facts: [
       "Batalla de Bomboná (1822): sitio histórico de la independencia",
@@ -425,7 +425,7 @@ const municipiosData = {
     name: "Linares",
     subregion: "Occidente",
     color: "#ff7b7b",
-    image: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_Linares_%28Nari%C3%B1o%29.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Bulletin_Of_The_Pan_American_Union_1948-04-_Vol_82_Iss_4_%28IA_sim_bulletin-of-the-pan-american-union_1948-04_82_4%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     description: "Linares es un municipio de clima templado a cálido en la cordillera occidental, situado a 1.650 m.s.n.m. Tierra de panela y café, limita con el cañón del río Guáitara. Su economía se basa en la producción artesanal de panela, el cultivo de café y frutales tropicales, con paisajes de laderas montañosas de gran valor ecológico.",
     facts: [
       "Altitud: 1.650 m.s.n.m., clima templado-cálido",
@@ -442,7 +442,7 @@ const municipiosData = {
     name: "Samaniego",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9f/Samaniego.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Samaniego_%28Nari%C3%B1o%29.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     description: "Samaniego, conocida como 'Ciudad Paisaje y Musical', es un importante centro cultural del suroccidente nariñense, situado a 1.600 m.s.n.m. en la cordillera occidental. Es reconocida por sus bandas musicales y compositores que han dado fama al municipio a nivel nacional. Su economía combina la producción de café, caña panelera y frutales, en un relieve montañoso con vistas panorámicas espectaculares.",
     facts: [
       "'Ciudad Paisaje y Musical' de Colombia",
@@ -457,7 +457,7 @@ const municipiosData = {
     name: "Providencia",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/7/7d/Flag_of_Providencia_%28Nari%C3%B1o%29.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Una_visita_a_San_Mateo%2C_el_25_de_junio_de_1916_%28IA_unavisitasanmate00viva%29.pdf?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     description: "Providencia es un municipio de montaña en la subregión Abades, situado a 1.800 m.s.n.m. en la cordillera occidental. Su economía combina la minería artesanal de oro con la agricultura de café y caña panelera. Los terrenos quebrados de la cordillera occidental configuran un paisaje de gran belleza natural y挑战 técnico para la agricultura.",
     facts: [
       "Altitud: 1.800 m.s.n.m., cordillera occidental",
@@ -472,7 +472,7 @@ const municipiosData = {
     name: "Santacruz (Guachavés)",
     subregion: "Abades",
     color: "#d4a017",
-    image: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Flag_of_Santacruz_%28Nari%C3%B1o%29.svg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/5/50/GUACHAVES_PANORAMICA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
     description: "Santacruz, también conocido como Guachavés, es un municipio del piedemonte occidental de Nariño a 1.500 m.s.n.m. Es territorio del pueblo indígena Awá, con importantes resguardos indígenas de gran extensión. Su economía se basa en la agricultura de subsistencia, la minería artesanal y la explotación de recursos forestales, manteniendo vivas tradiciones ancestrales Awá.",
     facts: [
       "Territorio del pueblo indígena Awá",

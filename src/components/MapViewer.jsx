@@ -63,7 +63,6 @@ export default function MapViewer() {
 
   return (
     <div className="flex flex-col h-full overflow-hidden pb-6 relative">
-
       {/* Header */}
       <div className="absolute top-0 left-0 right-0 p-4 md:p-6 z-20 pointer-events-none text-center">
         <h1 className="text-2xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-indigo-400 drop-shadow-sm mb-1 md:mb-2 mt-2 md:mt-0">
@@ -134,7 +133,10 @@ export default function MapViewer() {
                     src={hoveredRegion.image}
                     alt={hoveredRegion.name}
                     className="w-full h-full object-contain"
-                    onError={(e) => { e.target.style.display = 'none'; }}
+                    onError={(e) => {
+                      e.target.src = 'https://via.placeholder.com/400x200?text=Imagen+no+disponible';
+                      e.target.alt = 'Imagen no disponible para ' + hoveredRegion.name;
+                    }}
                   />
                 </div>
 
@@ -163,19 +165,23 @@ export default function MapViewer() {
             ) : (activeTab === "municipios" && hoveredMuni) ? (
               <div className="glass-panel shadow-2xl bg-slate-800/90 border-slate-700/50 text-slate-100 transform translate-x-0 opacity-100 transition-all duration-300 rounded-2xl overflow-hidden">
                 {/* Image at top */}
-                <div className="w-full h-56 bg-slate-700 overflow-hidden rounded-t-2xl">
+                <div className="w-full h-56 bg-slate-700 overflow-hidden rounded-t-2xl relative">
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
                   <img
                     src={hoveredMuni.image}
                     alt={hoveredMuni.name}
-                    className="w-full h-full object-contain"
-                    onError={(e) => { e.target.style.display = 'none'; }}
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    onError={(e) => {
+                      e.target.src = 'https://via.placeholder.com/400x200?text=Imagen+no+disponible';
+                      e.target.alt = 'Imagen no disponible para ' + hoveredMuni.name;
+                    }}
                   />
                 </div>
 
-                <div className="p-6">
+                <div className="p-6 relative z-20 -mt-8">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: hoveredMuni.color + '33' }}>
-                      <svg className="w-5 h-5" style={{ color: hoveredMuni.color }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                      <svg className="w-5 h-5" style={{ color: hoveredMuni.color }} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2-2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white leading-tight">{hoveredMuni.name}</h3>
@@ -205,7 +211,6 @@ export default function MapViewer() {
               </div>
             ) : null}
           </div>
-
         </div>
       )}
 
@@ -215,7 +220,6 @@ export default function MapViewer() {
           <EvaluationTab />
         </div>
       )}
-
     </div>
   );
 }
