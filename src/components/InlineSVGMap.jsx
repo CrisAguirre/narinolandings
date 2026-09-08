@@ -26,7 +26,7 @@ export default function InlineSVGMap({ svgPath, onRegionClick, onRegionHover, on
 
         svgEl.setAttribute("width", "100%");
         svgEl.setAttribute("height", "100%");
-        svgEl.style.maxHeight = "70vh";
+        svgEl.style.maxHeight = window.innerWidth < 768 ? "50vh" : "70vh";
         svgEl.style.display = "block";
         svgEl.style.margin = "0 auto";
 

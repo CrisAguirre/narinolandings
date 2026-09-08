@@ -31,3 +31,22 @@
   filter: brightness(1.4) drop-shadow(0 0 12px rgba(59, 130, 246, 0.7));
   opacity: 0.85;
 }
+
+/* ═══════════════════════════════════════════════════
+   MOBILE & TABLET RESPONSIVE OVERRIDES
+   ═══════════════════════════════════════════════════ */
+
+/* Allow body scroll on small screens so the info card is reachable */
+@media (max-width: 767px) {
+  body {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+/* Evaluation Tab mobile adjustments */
+@media (max-width: 640px) {
+  .evaluation-container {
+    padding: 1rem !important;
+  }
+}

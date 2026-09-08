@@ -117,19 +117,19 @@ export default function EvaluationTab() {
   };
 
   return (
-    <div className="w-full max-w-3xl mx-auto mt-4 mb-12 p-6 glass-panel text-slate-100">
-      <div className="flex items-center gap-3 mb-6 border-b border-slate-700/50 pb-4">
-        <div className="w-10 h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400">
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+    <div className="w-full max-w-3xl mx-auto mt-4 mb-12 p-3 sm:p-4 md:p-6 glass-panel text-slate-100">
+      <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6 border-b border-slate-700/50 pb-3 sm:pb-4">
+        <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-indigo-500/20 flex items-center justify-center text-indigo-400 shrink-0">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
         </div>
-        <h2 className="text-2xl font-bold text-white">Módulo de Evaluación: Conoce Nariño</h2>
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-white">Módulo de Evaluación: Conoce Nariño</h2>
       </div>
 
       {step === 1 && (
         <div className="animate-fade-in">
-          <p className="text-slate-300 mb-6">Por favor, ingresa tus datos para comenzar la prueba. Consta de 10 preguntas de selección múltiple sobre geografía e historia de Nariño. Algunas preguntas tienen 2 opciones correctas.</p>
+          <p className="text-sm sm:text-base text-slate-300 mb-4 sm:mb-6">Por favor, ingresa tus datos para comenzar la prueba. Consta de 10 preguntas de selección múltiple sobre geografía e historia de Nariño. Algunas preguntas tienen 2 opciones correctas.</p>
           
-          <form onSubmit={startQuiz} className="space-y-4 max-w-md mx-auto bg-slate-800/50 p-6 rounded-xl border border-slate-700/50">
+          <form onSubmit={startQuiz} className="space-y-3 sm:space-y-4 max-w-md mx-auto bg-slate-800/50 p-4 sm:p-6 rounded-xl border border-slate-700/50">
             <div>
               <label className="block text-sm font-medium text-slate-300 mb-1">Nombre Completo</label>
               <input 
@@ -196,16 +196,16 @@ export default function EvaluationTab() {
           {questions.map((q, index) => {
             const isMulti = q.correct.length > 1;
             return (
-              <div key={index} className="bg-slate-800/40 p-5 rounded-xl border border-slate-700/50 shadow-inner">
-                <h3 className="text-lg font-medium text-white mb-4">
-                  <span className="text-indigo-400 mr-2">{index + 1}.</span> 
+              <div key={index} className="bg-slate-800/40 p-3 sm:p-5 rounded-xl border border-slate-700/50 shadow-inner">
+                <h3 className="text-sm sm:text-base md:text-lg font-medium text-white mb-3 sm:mb-4">
+                  <span className="text-indigo-400 mr-1.5 sm:mr-2">{index + 1}.</span> 
                   {q.text}
                 </h3>
-                <div className="space-y-2 pl-6">
+                <div className="space-y-1.5 sm:space-y-2 pl-2 sm:pl-6">
                   {q.options.map((opt, oIndex) => {
                     const isChecked = (answers[index] || []).includes(oIndex);
                     return (
-                      <label key={oIndex} className={`flex items-center gap-3 p-3 rounded-lg cursor-pointer transition-colors ${isChecked ? 'bg-indigo-500/20 border border-indigo-500/50' : 'hover:bg-slate-700/50 border border-transparent'}`}>
+                      <label key={oIndex} className={`flex items-center gap-2 sm:gap-3 p-2 sm:p-3 rounded-lg cursor-pointer transition-colors ${isChecked ? 'bg-indigo-500/20 border border-indigo-500/50' : 'hover:bg-slate-700/50 border border-transparent'}`}>
                         <div className={`w-5 h-5 flex items-center justify-center shrink-0 border transition-colors ${isMulti ? 'rounded' : 'rounded-full'} ${isChecked ? 'bg-indigo-500 border-indigo-500' : 'border-slate-500'}`}>
                           {isChecked && <svg className="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>}
                         </div>
@@ -215,7 +215,7 @@ export default function EvaluationTab() {
                           checked={isChecked}
                           onChange={() => handleOptionChange(index, oIndex, isMulti)}
                         />
-                        <span className="text-slate-200">{opt}</span>
+                        <span className="text-xs sm:text-sm md:text-base text-slate-200">{opt}</span>
                       </label>
                     );
                   })}
