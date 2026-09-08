@@ -812,7 +812,7 @@ const municipiosData = {
     name: "El Charco",
     subregion: "Sanquianga",
     color: "#68c05e",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tumaco_-_Parque_Col%C3%B3n.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parquecol%C3%B3n.jpg",
     description: "El Charco es municipio costero de la región Sanquianga en la costa pacífica nariñense, a nivel del mar. Su economía se basa en la pesca artesanal y la recolección de piangua, además de la explotación forestal. Comunidades afrodescendientes con rica cultura habitan este territorio de manglares y biodiversidad costera.",
     facts: [
       "Ubicado en la costa pacífica nariñense",
@@ -889,7 +889,7 @@ const municipiosData = {
     name: "San Andrés de Tumaco",
     subregion: "Pacífico Sur",
     color: "#e8c850",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tumaco_-_Parque_Col%C3%B3n.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parquecol%C3%B3n.jpg",
     description: "Tumaco es el principal puerto marítimo de Nariño y segundo del Pacífico colombiano, conocido como 'La Perla del Pacífico'. Situado a nivel del mar, es la segunda ciudad del departamento con aproximadamente 230.000 habitantes. Su economía combina la industria pesquera, la palmicultura y el comercio. Playas turísticas como El Morro y Bocagrande atraen visitantes nacionales e internacionales.",
     facts: [
       "Puerto marítimo más importante del suroccidente colombiano",
@@ -951,7 +951,7 @@ const municipiosData = {
     name: "Roberto Payán",
     subregion: "Telembí",
     color: "#c08de0",
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Tumaco_-_Parque_Col%C3%B3n.jpg",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Parquecol%C3%B3n.jpg",
     description: "Roberto Payán, también conocido como San José, es municipio selvático de la cuenca del Telembí con alta biodiversidad de selva húmeda tropical. Su economía combina la minería artesanal, la agricultura de subsistencia y la explotación forestal en un territorio de gran valor ecológico.",
     facts: [
       "También conocido como San José",
